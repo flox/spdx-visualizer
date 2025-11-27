@@ -1,0 +1,262 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2025-11-27T00:52:24Z",
+    "creators": [
+      "Tool: flox-catalog-sbom-generator"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "hasExtractedLicensingInfos": [
+    {
+      "extractedText": "Original license text from package metadata: [ LGPL-3.0-or-later, GPL-2.0-or-later, GPL-3.0-or-later ]",
+      "licenseId": "LicenseRef-188a205eff704b90"
+    }
+  ],
+  "name": "SBOM for hello-2.12.1",
+  "spdxVersion": "SPDX-2.3",
+  "documentNamespace": "http://spdx.org/spdxdocs/_nix_store_fqs92lzychkm6p37j7fnj4d65nq9fzla-hello-2-12-1-drv",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Drv-fqs92lzychkm6p37j7fnj4d65nq9fzla",
+      "comment": "Nix derivation: Build specification containing source metadata and build instructions. Not a runtime dependency.",
+      "downloadLocation": "NONE",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/fqs92lzychkm6p37j7fnj4d65nq9fzla-hello-2.12.1.drv",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "name": "hello-2.12.1",
+      "packageFileName": "/nix/store/fqs92lzychkm6p37j7fnj4d65nq9fzla-hello-2.12.1.drv",
+      "primaryPackagePurpose": "SOURCE",
+      "summary": "Build specification (not a runtime artifact)",
+      "versionInfo": "2.12.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Out-kwmqk7ygvhypxadsdaai27gl6qfxv7za",
+      "comment": "Runtime artifact (output 'out') produced by Nix derivation /nix/store/fqs92lzychkm6p37j7fnj4d65nq9fzla-hello-2.12.1.drv",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/kwmqk7ygvhypxadsdaai27gl6qfxv7za-hello-2.12.1",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseComments": "License derived from producing derivation /nix/store/fqs92lzychkm6p37j7fnj4d65nq9fzla-hello-2.12.1.drv",
+      "licenseConcluded": "GPL-3.0-or-later",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "name": "hello-out",
+      "packageFileName": "/nix/store/kwmqk7ygvhypxadsdaai27gl6qfxv7za-hello-2.12.1",
+      "primaryPackagePurpose": "APPLICATION",
+      "summary": "Runtime binary artifact",
+      "versionInfo": "2.12.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Run-m71p7f0nymb19yn1dascklyya2i96jfw",
+      "comment": "Runtime dependency (store path referenced by other packages)",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/m71p7f0nymb19yn1dascklyya2i96jfw-glibc-2.39-52",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseComments": "License derived from producing derivation /nix/store/3nxf8kw3vgghz2y72b9qwi01sz62nhyk-glibc-2.39-52.drv",
+      "licenseConcluded": "LGPL-2.0-or-later",
+      "licenseDeclared": "LGPL-2.0-or-later",
+      "name": "iconv-out",
+      "packageFileName": "/nix/store/m71p7f0nymb19yn1dascklyya2i96jfw-glibc-2.39-52",
+      "primaryPackagePurpose": "APPLICATION",
+      "summary": "Runtime dependency",
+      "versionInfo": "glibc-2.39-52"
+    },
+    {
+      "SPDXID": "SPDXRef-Run-pq755f1pxaas9q7666wzdzxidcvf9frg",
+      "comment": "Runtime dependency (store path referenced by other packages)",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/pq755f1pxaas9q7666wzdzxidcvf9frg-libidn2-2.3.7",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseComments": "License derived from producing derivation /nix/store/l9ww1d7nmjpan72yiihndggqha4mkaa0-libidn2-2.3.7.drv",
+      "licenseConcluded": "LicenseRef-188a205eff704b90",
+      "licenseDeclared": "LicenseRef-188a205eff704b90",
+      "name": "libidn2-out",
+      "packageFileName": "/nix/store/pq755f1pxaas9q7666wzdzxidcvf9frg-libidn2-2.3.7",
+      "primaryPackagePurpose": "APPLICATION",
+      "summary": "Runtime dependency",
+      "versionInfo": "2.3.7"
+    },
+    {
+      "SPDXID": "SPDXRef-Run-bihw7p4zdqwyxmnc8h67c06lnjkvdan8",
+      "comment": "Runtime dependency (store path referenced by other packages)",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/bihw7p4zdqwyxmnc8h67c06lnjkvdan8-xgcc-13.3.0-libgcc",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "xgcc",
+      "packageFileName": "/nix/store/bihw7p4zdqwyxmnc8h67c06lnjkvdan8-xgcc-13.3.0-libgcc",
+      "primaryPackagePurpose": "APPLICATION",
+      "summary": "Runtime dependency",
+      "versionInfo": "13.3.0-libgcc"
+    },
+    {
+      "SPDXID": "SPDXRef-Run-vf553z7mi2vqk8ca6kkfd9x5gy3nnz0p",
+      "comment": "Runtime dependency (store path referenced by other packages)",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/vf553z7mi2vqk8ca6kkfd9x5gy3nnz0p-libunistring-1.1",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseComments": "License derived from producing derivation /nix/store/5m224qcl7h99pxxfhw3ksa4rlhkbmgab-libunistring-1.1.drv",
+      "licenseConcluded": "LGPL-3.0-or-later",
+      "licenseDeclared": "LGPL-3.0-or-later",
+      "name": "libunistring-out",
+      "packageFileName": "/nix/store/vf553z7mi2vqk8ca6kkfd9x5gy3nnz0p-libunistring-1.1",
+      "primaryPackagePurpose": "APPLICATION",
+      "summary": "Runtime dependency",
+      "versionInfo": "1.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Drv-3nxf8kw3vgghz2y72b9qwi01sz62nhyk",
+      "comment": "Nix derivation: Build specification containing source metadata and build instructions. Not a runtime dependency.",
+      "downloadLocation": "NONE",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/3nxf8kw3vgghz2y72b9qwi01sz62nhyk-glibc-2.39-52.drv",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-2.0-or-later",
+      "licenseDeclared": "LGPL-2.0-or-later",
+      "name": "iconv",
+      "packageFileName": "/nix/store/3nxf8kw3vgghz2y72b9qwi01sz62nhyk-glibc-2.39-52.drv",
+      "primaryPackagePurpose": "SOURCE",
+      "summary": "Build specification (not a runtime artifact)",
+      "versionInfo": "glibc-2.39-52"
+    },
+    {
+      "SPDXID": "SPDXRef-Drv-l9ww1d7nmjpan72yiihndggqha4mkaa0",
+      "comment": "Nix derivation: Build specification containing source metadata and build instructions. Not a runtime dependency.",
+      "downloadLocation": "NONE",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/l9ww1d7nmjpan72yiihndggqha4mkaa0-libidn2-2.3.7.drv",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseConcluded": "LicenseRef-188a205eff704b90",
+      "licenseDeclared": "LicenseRef-188a205eff704b90",
+      "name": "libidn2",
+      "packageFileName": "/nix/store/l9ww1d7nmjpan72yiihndggqha4mkaa0-libidn2-2.3.7.drv",
+      "primaryPackagePurpose": "SOURCE",
+      "summary": "Build specification (not a runtime artifact)",
+      "versionInfo": "2.3.7"
+    },
+    {
+      "SPDXID": "SPDXRef-Drv-5m224qcl7h99pxxfhw3ksa4rlhkbmgab",
+      "comment": "Nix derivation: Build specification containing source metadata and build instructions. Not a runtime dependency.",
+      "downloadLocation": "NONE",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "/nix/store/5m224qcl7h99pxxfhw3ksa4rlhkbmgab-libunistring-1.1.drv",
+          "referenceType": "nix-store-path"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseConcluded": "LGPL-3.0-or-later",
+      "licenseDeclared": "LGPL-3.0-or-later",
+      "name": "libunistring",
+      "packageFileName": "/nix/store/5m224qcl7h99pxxfhw3ksa4rlhkbmgab-libunistring-1.1.drv",
+      "primaryPackagePurpose": "SOURCE",
+      "summary": "Build specification (not a runtime artifact)",
+      "versionInfo": "1.1"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Out-kwmqk7ygvhypxadsdaai27gl6qfxv7za",
+      "relatedSpdxElement": "SPDXRef-Drv-fqs92lzychkm6p37j7fnj4d65nq9fzla",
+      "relationshipType": "GENERATED_FROM"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-m71p7f0nymb19yn1dascklyya2i96jfw",
+      "relatedSpdxElement": "SPDXRef-Drv-3nxf8kw3vgghz2y72b9qwi01sz62nhyk",
+      "relationshipType": "GENERATED_FROM"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-pq755f1pxaas9q7666wzdzxidcvf9frg",
+      "relatedSpdxElement": "SPDXRef-Drv-l9ww1d7nmjpan72yiihndggqha4mkaa0",
+      "relationshipType": "GENERATED_FROM"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-vf553z7mi2vqk8ca6kkfd9x5gy3nnz0p",
+      "relatedSpdxElement": "SPDXRef-Drv-5m224qcl7h99pxxfhw3ksa4rlhkbmgab",
+      "relationshipType": "GENERATED_FROM"
+    },
+    {
+      "spdxElementId": "SPDXRef-Out-kwmqk7ygvhypxadsdaai27gl6qfxv7za",
+      "relatedSpdxElement": "SPDXRef-Run-m71p7f0nymb19yn1dascklyya2i96jfw",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-m71p7f0nymb19yn1dascklyya2i96jfw",
+      "relatedSpdxElement": "SPDXRef-Run-bihw7p4zdqwyxmnc8h67c06lnjkvdan8",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-m71p7f0nymb19yn1dascklyya2i96jfw",
+      "relatedSpdxElement": "SPDXRef-Run-pq755f1pxaas9q7666wzdzxidcvf9frg",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-pq755f1pxaas9q7666wzdzxidcvf9frg",
+      "relatedSpdxElement": "SPDXRef-Run-vf553z7mi2vqk8ca6kkfd9x5gy3nnz0p",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-bihw7p4zdqwyxmnc8h67c06lnjkvdan8",
+      "relatedSpdxElement": "NOASSERTION",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-Run-vf553z7mi2vqk8ca6kkfd9x5gy3nnz0p",
+      "relatedSpdxElement": "NONE",
+      "relationshipType": "DEPENDS_ON"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Drv-fqs92lzychkm6p37j7fnj4d65nq9fzla",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}

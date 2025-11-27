@@ -3,6 +3,13 @@
   "manifest": {
     "version": 1,
     "install": {
+      "chromium": {
+        "pkg-path": "chromium",
+        "systems": [
+          "x86_64-linux",
+          "aarch64-linux"
+        ]
+      },
       "just": {
         "pkg-path": "just"
       },
@@ -18,9 +25,74 @@
     },
     "hook": {},
     "profile": {},
-    "options": {}
+    "options": {},
+    "services": {
+      "http-server": {
+        "command": "cd $FLOX_ENV_PROJECT && uv run python3 -m http.server 3000"
+      }
+    }
   },
   "packages": [
+    {
+      "attr_path": "chromium",
+      "broken": false,
+      "derivation": "/nix/store/90i3f88lhjan28pdfw4x0hpddv640sz0-chromium-142.0.7444.59.drv",
+      "description": "Open source web browser from Google",
+      "install_id": "chromium",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "chromium-142.0.7444.59",
+      "pname": "chromium",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:28:57.649470Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "142.0.7444.59",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/j292mp595k3l5wy1gh5nx5i4l327d3iw-chromium-142.0.7444.59",
+        "sandbox": "/nix/store/hsns1zvgcf2d0gjsh5nvzyvhnnkn24qx-chromium-142.0.7444.59-sandbox"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "chromium",
+      "broken": false,
+      "derivation": "/nix/store/kjjx24pgqi120fsxlclwhd9340f6bpgh-chromium-142.0.7444.59.drv",
+      "description": "Open source web browser from Google",
+      "install_id": "chromium",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "chromium-142.0.7444.59",
+      "pname": "chromium",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:20:46.951093Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "142.0.7444.59",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bj09y0p98p3rw6bzplmbawdywi4yb8wk-chromium-142.0.7444.59",
+        "sandbox": "/nix/store/46lfqsgr5z5i5yyy29dz5f844frc506j-chromium-142.0.7444.59-sandbox"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "just",
       "broken": false,
