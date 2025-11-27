@@ -1,0 +1,2846 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2025-11-27T15:17:19",
+    "creators": [
+      "Tool: nix2sbom"
+    ]
+  },
+  "dataLicense": "http://spdx.org/licenses/CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/nix/store/5b5pdfhnm47n4n8l6vksfg45a4vff1rj-nix-2.31.2.drv-6a3996f3-9974-47a3-ac41-0acfc8d496e3",
+  "name": "/nix/store/5b5pdfhnm47n4n8l6vksfg45a4vff1rj-nix-2.31.2.drv",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-02fflq6mdl49pwackn2mlhrr87pp2jwm-perl5.40.0-Authen-SASL-2.1900.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EH/EHUELS/Authen-SASL-2.1900.tar.gz",
+      "name": "Authen-SASL",
+      "versionInfo": "2.1900"
+    },
+    {
+      "SPDXID": "SPDXRef-02s2qn317ppn7i5v284miz3l3l6m9jqh-hwloc-2.12.2.drv",
+      "downloadLocation": "https://github.com/open-mpi/hwloc/archive/refs/tags/hwloc-2.12.2.tar.gz",
+      "name": "hwloc",
+      "versionInfo": "2.12.2"
+    },
+    {
+      "SPDXID": "SPDXRef-06yl7bz9dhkqnqxn7d9sls288lw66ack-perl5.40.0-B-COW-0.007.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/B-COW-0.007.tar.gz",
+      "name": "B-COW",
+      "versionInfo": "0.007"
+    },
+    {
+      "SPDXID": "SPDXRef-08yc0q8pyimbz0m2z8pyvrn6vkqvidhq-nix-functional-tests-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-functional-tests",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-09l13297dj79v7bf4vwpc9f57xanhqp0-flex-2.6.4.drv",
+      "downloadLocation": "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz",
+      "name": "flex",
+      "versionInfo": "2.6.4"
+    },
+    {
+      "SPDXID": "SPDXRef-0a02vx71hgq46d6kxb2x2cwq4lsv461h-bash-interactive-5.3p3.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/bash/bash-5.3.tar.gz",
+      "name": "bash-interactive",
+      "versionInfo": "5.3p3"
+    },
+    {
+      "SPDXID": "SPDXRef-0am2ap08pc2065r0nxyxswahgh280xmc-editline-1.17.1-unstable-2025-05-24.drv",
+      "downloadLocation": "https://github.com/troglobit/editline/archive/f735e4d1d566cac3caa4a5e248179d07f0babefd.tar.gz",
+      "name": "editline",
+      "versionInfo": "1.17.1-unstable-2025-05-24"
+    },
+    {
+      "SPDXID": "SPDXRef-0amsijxxc8kr14nx40h710prh6fpb1px-python3.13-hatchling-1.27.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/h/hatchling/hatchling-1.27.0.tar.gz",
+      "name": "hatchling",
+      "versionInfo": "1.27.0"
+    },
+    {
+      "SPDXID": "SPDXRef-0b08h8zp90iymw94h2p1hiahzwcj0k4r-diffutils-3.12.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/diffutils/diffutils-3.12.tar.xz",
+      "name": "diffutils",
+      "versionInfo": "3.12"
+    },
+    {
+      "SPDXID": "SPDXRef-0c73fza6x8899dzh4hxp48cd3xkfkbfp-rustc-bootstrap-1.89.0.drv",
+      "downloadLocation": "https://static.rust-lang.org/dist/rust-1.89.0-x86_64-unknown-linux-gnu.tar.gz",
+      "name": "rustc-bootstrap",
+      "versionInfo": "1.89.0"
+    },
+    {
+      "SPDXID": "SPDXRef-0g5dzw7bh1rhgfkjl2npb2j7ahb335k9-python3.13-bootstrap-flit-core-3.12.0.drv",
+      "downloadLocation": "https://github.com/pypa/flit/archive/3.12.0.tar.gz",
+      "name": "python3.13-bootstrap-flit-core",
+      "versionInfo": "3.12.0"
+    },
+    {
+      "SPDXID": "SPDXRef-0gc8wmgf9vrfwbpgfkl3ia89kcgxqh1m-keyutils-1.6.3.drv",
+      "downloadLocation": "https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz",
+      "name": "keyutils",
+      "versionInfo": "1.6.3"
+    },
+    {
+      "SPDXID": "SPDXRef-0irfwxxsv1z2p4kh9nfaz3cdh1hh226m-unzip-6.0.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/infozip/unzip60.tar.gz",
+      "name": "unzip",
+      "versionInfo": "6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-0jys1r9fr6kda0jprdwva2lkxc3f5m0w-nix-util-tests-run.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-util-tests-run",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-0p2xrg8hi8jv649p48isfpagls0ska5q-perl5.40.0-Data-UUID-1.226.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Data-UUID-1.226.tar.gz",
+      "name": "Data-UUID",
+      "versionInfo": "1.226"
+    },
+    {
+      "SPDXID": "SPDXRef-0pqb0h1ywdmnsxxn0rcbsvrb8fcxxs8i-python3.13-freezegun-1.5.4.drv",
+      "downloadLocation": "https://pypi.io/packages/source/f/freezegun/freezegun-1.5.4.tar.gz",
+      "name": "freezegun",
+      "versionInfo": "1.5.4"
+    },
+    {
+      "SPDXID": "SPDXRef-0qxd2gb333qwaha622bbykwzyz93y0ga-perl5.40.0-Module-Pluggable-5.2.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Module-Pluggable-5.2.tar.gz",
+      "name": "Module-Pluggable",
+      "versionInfo": "5.2"
+    },
+    {
+      "SPDXID": "SPDXRef-0sbrch5xfagvc231lf3ky8jjm4d99b42-kmod-31.drv",
+      "downloadLocation": "https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz",
+      "name": "kmod",
+      "versionInfo": "31"
+    },
+    {
+      "SPDXID": "SPDXRef-0sd77yzrfapq174id0jcnbaz8vw5fvc7-boost-1.87.0.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/boost/boost_1_87_0.tar.bz2",
+      "name": "boost",
+      "versionInfo": "1.87.0"
+    },
+    {
+      "SPDXID": "SPDXRef-0sy6d3p4zixpb2626ickg9pvq6axfgp7-libcap-2.76.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz",
+      "name": "libcap",
+      "versionInfo": "2.76"
+    },
+    {
+      "SPDXID": "SPDXRef-0z40bpyivf57454dn3j82lplg4h0xqg5-perl5.40.0-Term-Table-0.017.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Term-Table-0.017.tar.gz",
+      "name": "Term-Table",
+      "versionInfo": "0.017"
+    },
+    {
+      "SPDXID": "SPDXRef-11307j0q3a8kgyy74s2cb2nhxmbap2kx-xz-5.8.1.drv",
+      "downloadLocation": "https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz",
+      "name": "xz",
+      "versionInfo": "5.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-11rvynflsaiisz5qyp8wgmimmjhbddh8-docbook-xml-4.1.2.drv",
+      "downloadLocation": "https://docbook.org/xml/4.1.2/docbkx412.zip",
+      "name": "docbook-xml",
+      "versionInfo": "4.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-12vhcl9qrs8c13kphf6jya6d4ggngnnk-perl5.40.0-po4a-0.73.drv",
+      "downloadLocation": "https://github.com/mquinson/po4a/releases/download/v0.73/po4a-0.73.tar.gz",
+      "name": "po4a",
+      "versionInfo": "0.73"
+    },
+    {
+      "SPDXID": "SPDXRef-13mzgans0rz0j6djs1sizqfclcppzpzf-nix-flake-c-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-flake-c",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-13y1969nwjy6i7qy22dmhdxbg8is87w7-gettext-0.25.1.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/gettext/gettext-0.25.1.tar.gz",
+      "name": "gettext",
+      "versionInfo": "0.25.1"
+    },
+    {
+      "SPDXID": "SPDXRef-17dc4lnng741bbhz4r3fqwlij1l5i6f3-nghttp3-1.12.0.drv",
+      "downloadLocation": "https://github.com/ngtcp2/nghttp3/releases/download/v1.12.0/nghttp3-1.12.0.tar.bz2",
+      "name": "nghttp3",
+      "versionInfo": "1.12.0"
+    },
+    {
+      "SPDXID": "SPDXRef-19ffgmrnvycg7kiq7vkkqplwc79cdfgl-docbook5-5.0.1.drv",
+      "downloadLocation": "http://www.docbook.org/xml/5.0.1/docbook-5.0.1.zip",
+      "name": "docbook5",
+      "versionInfo": "5.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-1d20b49zcb1pf6pah390k54mzq286q4r-perl5.40.0-FCGI-0.82.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/FCGI-0.82.tar.gz",
+      "name": "FCGI",
+      "versionInfo": "0.82"
+    },
+    {
+      "SPDXID": "SPDXRef-1m1zm53f78nnpggv3yxbqcipf0nqs8i9-patch-2.8.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/patch/patch-2.8.tar.xz",
+      "name": "patch",
+      "versionInfo": "2.8"
+    },
+    {
+      "SPDXID": "SPDXRef-1nny6y12n4vzc9xgpnaxh7i72l8zrqdg-python3.13-zipp-3.23.0.drv",
+      "downloadLocation": "https://github.com/jaraco/zipp/archive/refs/tags/v3.23.0.tar.gz",
+      "name": "zipp",
+      "versionInfo": "3.23.0"
+    },
+    {
+      "SPDXID": "SPDXRef-1qf5aqqljpy50l5y12f6c6qf8pvb87ih-perl5.40.0-XML-NamespaceSupport-1.12.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.12.tar.gz",
+      "name": "XML-NamespaceSupport",
+      "versionInfo": "1.12"
+    },
+    {
+      "SPDXID": "SPDXRef-1sgyzrwnd0ch0yn9n4yzb06jknp5wbhq-onetbb-2022.2.0.drv",
+      "downloadLocation": "https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2022.2.0.tar.gz",
+      "name": "onetbb",
+      "versionInfo": "2022.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-1y7n4l472brcgxh4zwx5749qinw9hn1r-keyutils-1.6.3.drv",
+      "downloadLocation": "https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-1.6.3.tar.gz",
+      "name": "keyutils",
+      "versionInfo": "1.6.3"
+    },
+    {
+      "SPDXID": "SPDXRef-1z8x4fgvmx2gbcqpbil2b0mksr7563mk-help2man-1.49.3.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/help2man/help2man-1.49.3.tar.xz",
+      "name": "help2man",
+      "versionInfo": "1.49.3"
+    },
+    {
+      "SPDXID": "SPDXRef-2002fsslyf8glxl92f6qpbs6rmisnagn-nix-flake-tests-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-flake-tests",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-20dcqd747d509kkwh5a5ymjlvdyqy0vy-python3.13-pathspec-0.12.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/pathspec/pathspec-0.12.1.tar.gz",
+      "name": "pathspec",
+      "versionInfo": "0.12.1"
+    },
+    {
+      "SPDXID": "SPDXRef-24bc6qqdvgn0dn19gkavqvs94k49gvcj-linux-pam-1.7.1.drv",
+      "downloadLocation": "https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.7.1.tar.gz",
+      "name": "linux-pam",
+      "versionInfo": "1.7.1"
+    },
+    {
+      "SPDXID": "SPDXRef-2j85r9b45z6hlr8311y1rpwiq1wy7d0n-aws-c-s3-0.8.7.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-s3/archive/v0.8.7.tar.gz",
+      "name": "aws-c-s3",
+      "versionInfo": "0.8.7"
+    },
+    {
+      "SPDXID": "SPDXRef-2j8n93zdqwn3k7p2h26ixacgq4605aj8-cargo-1.89.0.drv",
+      "downloadLocation": "https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.gz",
+      "name": "cargo",
+      "versionInfo": "1.89.0"
+    },
+    {
+      "SPDXID": "SPDXRef-2kgzlxql74smml6q6xw63fmw6b47248x-nix-expr-c-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-expr-c",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-2nixzh6p5423jqmvsizzckjjbqmygaq8-ngtcp2-1.15.1.drv",
+      "downloadLocation": "https://github.com/ngtcp2/ngtcp2/releases/download/v1.15.1/ngtcp2-1.15.1.tar.bz2",
+      "name": "ngtcp2",
+      "versionInfo": "1.15.1"
+    },
+    {
+      "SPDXID": "SPDXRef-2qsyr0fgcl25by092vjiyiqby0g5w86s-docbook-xml-4.5.drv",
+      "downloadLocation": "https://docbook.org/xml/4.5/docbook-xml-4.5.zip",
+      "name": "docbook-xml",
+      "versionInfo": "4.5"
+    },
+    {
+      "SPDXID": "SPDXRef-2rdsrnlcf8xlksdajng2awia14wj331r-glibc-locales-2.40-66.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/glibc/glibc-2.40.tar.xz",
+      "name": "glibc-locales",
+      "versionInfo": "2.40-66"
+    },
+    {
+      "SPDXID": "SPDXRef-2rwf58556s57rk59gdsd0jp2dnpk8lhb-perl5.40.0-Module-Runtime-0.016.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz",
+      "name": "Module-Runtime",
+      "versionInfo": "0.016"
+    },
+    {
+      "SPDXID": "SPDXRef-2syzczpqm5shd6j5s88bi9mr9h1bwm2q-python3.13-webencodings-0.5.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/w/webencodings/webencodings-0.5.1.tar.gz",
+      "name": "webencodings",
+      "versionInfo": "0.5.1"
+    },
+    {
+      "SPDXID": "SPDXRef-301lbm199ysicraa9ksbr9hacliy8nza-python3.13-sphinxcontrib-qthelp-2.0.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/sphinxcontrib_qthelp/sphinxcontrib_qthelp-2.0.0.tar.gz",
+      "name": "sphinxcontrib-qthelp",
+      "versionInfo": "2.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-303nq8m6k42sr13c30qhy1wajw9jnhlx-perl5.40.0-TermReadKey-2.38.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/J/JS/JSTOWE/TermReadKey-2.38.tar.gz",
+      "name": "TermReadKey",
+      "versionInfo": "2.38"
+    },
+    {
+      "SPDXID": "SPDXRef-3294ymp3wr1izr443nbfxfcv1ak8l4mz-file-5.45.drv",
+      "downloadLocation": "https://astron.com/pub/file/file-5.45.tar.gz",
+      "name": "file",
+      "versionInfo": "5.45"
+    },
+    {
+      "SPDXID": "SPDXRef-32zqjbmr4n48fyx5mhvhlb4pms66ffcs-nghttp2-1.67.1.drv",
+      "downloadLocation": "https://github.com/nghttp2/nghttp2/releases/download/v1.67.1/nghttp2-1.67.1.tar.bz2",
+      "name": "nghttp2",
+      "versionInfo": "1.67.1"
+    },
+    {
+      "SPDXID": "SPDXRef-366j9akj9k99w4vk8b9avxazfd3bqxcc-lowdown-2.0.2.drv",
+      "downloadLocation": "https://kristaps.bsd.lv/lowdown/snapshots/lowdown-2.0.2.tar.gz",
+      "name": "lowdown",
+      "versionInfo": "2.0.2"
+    },
+    {
+      "SPDXID": "SPDXRef-36jini8fa4d91w4ydkqjlsvkwavjsliv-python3.13-types-psutil-7.0.0.20250801.drv",
+      "downloadLocation": "https://pypi.io/packages/source/t/types_psutil/types_psutil-7.0.0.20250801.tar.gz",
+      "name": "types-psutil",
+      "versionInfo": "7.0.0.20250801"
+    },
+    {
+      "SPDXID": "SPDXRef-37mlr6a5k9bk1d5gmml1wn1j9bklm035-lzip-1.25.drv",
+      "downloadLocation": "https://download.savannah.gnu.org/releases/lzip/lzip-1.25.tar.gz",
+      "name": "lzip",
+      "versionInfo": "1.25"
+    },
+    {
+      "SPDXID": "SPDXRef-380vgn3k2hv9cm55r3rcgf5h5khbgd5x-gdbm-1.26.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/gdbm/gdbm-1.26.tar.gz",
+      "name": "gdbm",
+      "versionInfo": "1.26"
+    },
+    {
+      "SPDXID": "SPDXRef-38d71mszq2sfn91q9ganzf3g12s5j4q9-python3.13-setuptools-scm-9.0.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/setuptools_scm/setuptools_scm-9.0.1.tar.gz",
+      "name": "setuptools-scm",
+      "versionInfo": "9.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-3byjdsidxyrb21zncynb20rbwfyv2yaq-nix-fetchers-tests-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-fetchers-tests",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-3dbczbd0022mdzryqlw0rbf81g2yii2q-libmpc-1.3.1.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/mpc/mpc-1.3.1.tar.gz",
+      "name": "libmpc",
+      "versionInfo": "1.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-3kmai8badczkcj3h0g08aycsvf7xmpa1-python3.13-mypy-1.17.1.drv",
+      "downloadLocation": "https://github.com/python/mypy/archive/refs/tags/v1.17.1.tar.gz",
+      "name": "mypy",
+      "versionInfo": "1.17.1"
+    },
+    {
+      "SPDXID": "SPDXRef-3lznxw5pxz4p6lwl8fq9m2hqwj6s7sb0-gzip-1.14.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/gzip/gzip-1.14.tar.xz",
+      "name": "gzip",
+      "versionInfo": "1.14"
+    },
+    {
+      "SPDXID": "SPDXRef-3n7knxgaddgj12zb9bgg0s2ky7hq1xpb-ed-1.22.2.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/ed/ed-1.22.2.tar.lz",
+      "name": "ed",
+      "versionInfo": "1.22.2"
+    },
+    {
+      "SPDXID": "SPDXRef-3z27xv8qmidxgs2ic3i4l26m83an5d8m-intltool-0.51.0.drv",
+      "downloadLocation": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+      "name": "intltool",
+      "versionInfo": "0.51.0"
+    },
+    {
+      "SPDXID": "SPDXRef-3z6isbjys45ipdk2fq6fcxn3r9qnklw1-python3.13-buildcatrust-0.4.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/b/buildcatrust/buildcatrust-0.4.0.tar.gz",
+      "name": "buildcatrust",
+      "versionInfo": "0.4.0"
+    },
+    {
+      "SPDXID": "SPDXRef-3zqh6pw4wgv24vxcz32c3hng90hdjxzb-xxHash-0.8.3.drv",
+      "downloadLocation": "https://github.com/Cyan4973/xxHash/archive/v0.8.3.tar.gz",
+      "name": "xxHash",
+      "versionInfo": "0.8.3"
+    },
+    {
+      "SPDXID": "SPDXRef-40cf4xljjxwh2v0q2yfxkkny942fb7aq-brotli-1.1.0.drv",
+      "downloadLocation": "https://github.com/google/brotli/archive/v1.1.0.tar.gz",
+      "name": "brotli",
+      "versionInfo": "1.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-431qqkyvwxz2np9bk78pf8wikxyxlpvx-numactl-2.0.18.drv",
+      "downloadLocation": "https://github.com/numactl/numactl/archive/v2.0.18.tar.gz",
+      "name": "numactl",
+      "versionInfo": "2.0.18"
+    },
+    {
+      "SPDXID": "SPDXRef-48ifgy0ylcyiwk3fjgzma1msbkq4kklg-cargo-bootstrap-1.89.0.drv",
+      "downloadLocation": "https://static.rust-lang.org/dist/rust-1.89.0-x86_64-unknown-linux-gnu.tar.gz",
+      "name": "cargo-bootstrap",
+      "versionInfo": "1.89.0"
+    },
+    {
+      "SPDXID": "SPDXRef-4c4h1qmvpj4b5vdnjapv7941jaqaiy90-perl5.40.0-ExtUtils-CChecker-0.11.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PE/PEVANS/ExtUtils-CChecker-0.11.tar.gz",
+      "name": "ExtUtils-CChecker",
+      "versionInfo": "0.11"
+    },
+    {
+      "SPDXID": "SPDXRef-4g08zq829ivbn7rniri5r6bmf1y4saix-perl5.40.0-HTML-Tagset-3.20.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/HTML-Tagset-3.20.tar.gz",
+      "name": "HTML-Tagset",
+      "versionInfo": "3.20"
+    },
+    {
+      "SPDXID": "SPDXRef-4g513m4irqxbs70zmdsk9w114dm1svn2-docbook-xsl-nons-1.79.2.drv",
+      "downloadLocation": "https://github.com/docbook/xslt10-stylesheets/releases/download/release%2F1.79.2/docbook-xsl-nons-1.79.2.tar.bz2",
+      "name": "docbook-xsl-nons",
+      "versionInfo": "1.79.2"
+    },
+    {
+      "SPDXID": "SPDXRef-4hxa7my4rfwxc33bl37jhd8kvgk33hh3-aws-crt-cpp-0.34.3.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-crt-cpp/archive/v0.34.3.tar.gz",
+      "name": "aws-crt-cpp",
+      "versionInfo": "0.34.3"
+    },
+    {
+      "SPDXID": "SPDXRef-4i3im0dpmlrxm4x9iap9p8dqvrwq2d5k-python3.13-lxml-6.0.2.drv",
+      "downloadLocation": "https://github.com/lxml/lxml/archive/refs/tags/lxml-6.0.2.tar.gz",
+      "name": "lxml",
+      "versionInfo": "6.0.2"
+    },
+    {
+      "SPDXID": "SPDXRef-4ik83aarrypbvkkrgxc0w36cwvks9icb-libtool-2.5.4.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz",
+      "name": "libtool",
+      "versionInfo": "2.5.4"
+    },
+    {
+      "SPDXID": "SPDXRef-4iqna4xl59y1vl3halfc9g0grprx7hgg-python3.13-zope-event-5.0.drv",
+      "downloadLocation": "https://github.com/zopefoundation/zope.event/archive/refs/tags/5.0.tar.gz",
+      "name": "zope-event",
+      "versionInfo": "5.0"
+    },
+    {
+      "SPDXID": "SPDXRef-4nav5anvp16jil803svzx73z6a1vqn22-perl5.40.0-Text-WrapI18N-0.06.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/K/KU/KUBOTA/Text-WrapI18N-0.06.tar.gz",
+      "name": "Text-WrapI18N",
+      "versionInfo": "0.06"
+    },
+    {
+      "SPDXID": "SPDXRef-4ncymcajsr50lx2r1h37hn25yj47d0a7-perl5.40.0-Test2-Suite-0.000156.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test2-Suite-0.000156.tar.gz",
+      "name": "Test2-Suite",
+      "versionInfo": "0.000156"
+    },
+    {
+      "SPDXID": "SPDXRef-4sd59vlpc0vk21vy7b879dpxvaxfcslv-python3.13-requests-2.32.5.drv",
+      "downloadLocation": "https://github.com/psf/requests/archive/refs/tags/v2.32.5.tar.gz",
+      "name": "requests",
+      "versionInfo": "2.32.5"
+    },
+    {
+      "SPDXID": "SPDXRef-4vh1h17qi9zff6vvx3sdmcqcc7w6jvzp-go-1.22.12-linux-amd64-bootstrap.drv",
+      "downloadLocation": "https://go.dev/dl/go1.22.12.linux-amd64.tar.gz",
+      "name": "go-1.22.12-linux-amd64-bootstrap",
+      "versionInfo": "1.22.12"
+    },
+    {
+      "SPDXID": "SPDXRef-4yb6v9yrx1148aa0kmamx8nlcl8lfv9m-llvm-src-21.1.2.drv",
+      "downloadLocation": "https://github.com/llvm/llvm-project/archive/llvmorg-21.1.2.tar.gz",
+      "name": "llvm-src",
+      "versionInfo": "21.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-4z82v66w58ns2q527ax5vf45n4bc7sfa-perl5.40.0-CGI-4.59.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-4.59.tar.gz",
+      "name": "CGI",
+      "versionInfo": "4.59"
+    },
+    {
+      "SPDXID": "SPDXRef-50h3ri59xghpw45yh8mrga2rmiw81qhn-python3.13-pycparser-2.23.drv",
+      "downloadLocation": "https://github.com/eliben/pycparser/archive/refs/tags/release_v2.23.tar.gz",
+      "name": "pycparser",
+      "versionInfo": "2.23"
+    },
+    {
+      "SPDXID": "SPDXRef-51hmc4masqmh0zbgkpz8fmxl3ppsjlxl-python3.13-execnet-2.1.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/e/execnet/execnet-2.1.1.tar.gz",
+      "name": "execnet",
+      "versionInfo": "2.1.1"
+    },
+    {
+      "SPDXID": "SPDXRef-520wa8apapw3kqc4sbrf3wnjjzyb7qnq-rsync-3.4.1.drv",
+      "downloadLocation": "https://www.samba.org/ftp/rsync/src/rsync-3.4.1.tar.gz",
+      "name": "rsync",
+      "versionInfo": "3.4.1"
+    },
+    {
+      "SPDXID": "SPDXRef-524rhpnfdfffa4400az21qjgp60fvmr8-python3.13-tomli-2.2.1.drv",
+      "downloadLocation": "https://github.com/hukkin/tomli/archive/2.2.1.tar.gz",
+      "name": "tomli",
+      "versionInfo": "2.2.1"
+    },
+    {
+      "SPDXID": "SPDXRef-52lskyk0qv36fnrrrz9jrabw9rjvgqx9-aws-checksums-0.2.7.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-checksums/archive/v0.2.7.tar.gz",
+      "name": "aws-checksums",
+      "versionInfo": "0.2.7"
+    },
+    {
+      "SPDXID": "SPDXRef-59az7ccsq6ci701l5dhpvgvwwcw1281z-opensp-1.5.2.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/openjade/OpenSP-1.5.2.tar.gz",
+      "name": "opensp",
+      "versionInfo": "1.5.2"
+    },
+    {
+      "SPDXID": "SPDXRef-5bjm85dywm8yvz7kh2vbqilpdi7yxi6d-python3.13-sphinxcontrib-serializinghtml-2.0.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-2.0.0.tar.gz",
+      "name": "sphinxcontrib-serializinghtml",
+      "versionInfo": "2.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-5dxv025800a6n969648pq2grrh5wmzm7-perl5.40.0-Text-CharWidth-0.04.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/K/KU/KUBOTA/Text-CharWidth-0.04.tar.gz",
+      "name": "Text-CharWidth",
+      "versionInfo": "0.04"
+    },
+    {
+      "SPDXID": "SPDXRef-5hxqqmlcz90ivama5fzw00ag7f0zcv06-oniguruma-6.9.10.drv",
+      "downloadLocation": "https://github.com/kkos/oniguruma/releases/download/v6.9.10/onig-6.9.10.tar.gz",
+      "name": "oniguruma",
+      "versionInfo": "6.9.10"
+    },
+    {
+      "SPDXID": "SPDXRef-5ihvvwbp2ssns7xj66ab0fm7n3zrg7ih-perl5.40.0-Class-Inspector-1.36.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Class-Inspector-1.36.tar.gz",
+      "name": "Class-Inspector",
+      "versionInfo": "1.36"
+    },
+    {
+      "SPDXID": "SPDXRef-5j7mmxgkfw7j5slpr88qnxcp1zjvrnz1-zlib-1.3.1.drv",
+      "downloadLocation": "https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
+      "name": "zlib",
+      "versionInfo": "1.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-5jsz0h9s7sgvxwkpmqdjg7cfxl4szw03-nix-flake-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-flake",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-5s942mpf6zp0i9hr4psz9f0a10pwlfms-audit-4.1.2-unstable-2025-09-06.drv",
+      "downloadLocation": "https://github.com/linux-audit/audit-userspace/archive/cb13fe75ee2c36d5c525ed9de22aae10dbc8caf4.tar.gz",
+      "name": "audit-userspace",
+      "versionInfo": "cb13fe75ee2c36d5c525ed9de22aae10dbc8caf4"
+    },
+    {
+      "SPDXID": "SPDXRef-5w2f8ahvmna4ds034s2lqi792jl198yq-nix-store-tests-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-store-tests",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-5wnf1bp6igrvdf4qzkzcw7rhxs4wka9d-python3.13-bootstrap-pyproject-hooks-1.2.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/pyproject_hooks/pyproject_hooks-1.2.0.tar.gz",
+      "name": "python3.13-bootstrap-pyproject-hooks",
+      "versionInfo": "1.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-5wyynxdws3kp0x279p20c0a4i1cb4jz7-python3.13-pyelftools-0.32.drv",
+      "downloadLocation": "https://github.com/eliben/pyelftools/archive/refs/tags/v0.32.tar.gz",
+      "name": "pyelftools",
+      "versionInfo": "0.32"
+    },
+    {
+      "SPDXID": "SPDXRef-5x02a5hk7j7qqfhnxw6xbw7g3mvd6x11-libmd-1.1.0.drv",
+      "downloadLocation": "https://archive.hadrons.org/software/libmd/libmd-1.1.0.tar.xz",
+      "name": "libmd",
+      "versionInfo": "1.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-5zhqj6ikbviirn35zvgp0wllk0r8nr0b-python3.13-pygments-2.19.2.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/pygments/pygments-2.19.2.tar.gz",
+      "name": "pygments",
+      "versionInfo": "2.19.2"
+    },
+    {
+      "SPDXID": "SPDXRef-5zi95dy66rdl90vp7rh59gia3shwzgl8-libseccomp-2.6.0.drv",
+      "downloadLocation": "https://github.com/seccomp/libseccomp/releases/download/v2.6.0/libseccomp-2.6.0.tar.gz",
+      "name": "libseccomp",
+      "versionInfo": "2.6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-60rxn6073n8k7nwy1gfz0jwzbbl4hmiq-zlib-1.3.1.drv",
+      "downloadLocation": "https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
+      "name": "zlib",
+      "versionInfo": "1.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-62qf9j9w0l3zq5lq19d0zihy4dn2iy3p-automake-1.18.1.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/automake/automake-1.18.1.tar.xz",
+      "name": "automake",
+      "versionInfo": "1.18.1"
+    },
+    {
+      "SPDXID": "SPDXRef-63j04va2ym00g5rmmhz48bsyq14pgga6-perl5.40.0-XML-SAX-1.02.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz",
+      "name": "XML-SAX",
+      "versionInfo": "1.02"
+    },
+    {
+      "SPDXID": "SPDXRef-658f1bqyi27xcvxvm7arfssgn4h02nyq-patchelf-0.15.2.drv",
+      "downloadLocation": "https://github.com/NixOS/patchelf/releases/download/0.15.2/patchelf-0.15.2.tar.bz2",
+      "name": "patchelf",
+      "versionInfo": "0.15.2"
+    },
+    {
+      "SPDXID": "SPDXRef-666mjw0pc2gv2drjs028fc6z2kswzj5r-libcpuid-0.8.1.drv",
+      "downloadLocation": "https://github.com/anrieff/libcpuid/archive/v0.8.1.tar.gz",
+      "name": "libcpuid",
+      "versionInfo": "0.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-66mhy5wixic6lj2f260kmj3nyzls1big-libgit2-1.9.1.drv",
+      "downloadLocation": "https://github.com/libgit2/libgit2/archive/v1.9.1.tar.gz",
+      "name": "libgit2",
+      "versionInfo": "1.9.1"
+    },
+    {
+      "SPDXID": "SPDXRef-69aq17xvjj5s16w1sqbicxgcyx0zm7fa-perl5.40.0-Devel-Cycle-1.12.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LD/LDS/Devel-Cycle-1.12.tar.gz",
+      "name": "Devel-Cycle",
+      "versionInfo": "1.12"
+    },
+    {
+      "SPDXID": "SPDXRef-6azkq96m4n46kl10m6577accymw6qvz1-libev-4.33.drv",
+      "downloadLocation": "http://dist.schmorp.de/libev/Attic/libev-4.33.tar.gz",
+      "name": "libev",
+      "versionInfo": "4.33"
+    },
+    {
+      "SPDXID": "SPDXRef-6fqkdw3jj346z22pj1z6ifgh62f515xg-perl5.40.0-HTTP-CookieJar-0.014.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-CookieJar-0.014.tar.gz",
+      "name": "HTTP-CookieJar",
+      "versionInfo": "0.014"
+    },
+    {
+      "SPDXID": "SPDXRef-6gd7nqxx6ajv222pj7xdxxr8vidjm05k-nix-store-tests-run.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-store-tests-run",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-6hrp3d824lcg0v1s1d884qld0rvhnmr1-linux-headers-6.16.7.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.16.7.tar.xz",
+      "name": "linux-headers",
+      "versionInfo": "6.16.7"
+    },
+    {
+      "SPDXID": "SPDXRef-6i6qcqim1cd1zn9yr99rqmzf9550d4kl-boehm-gc-8.2.8.drv",
+      "downloadLocation": "https://github.com/bdwgc/bdwgc/archive/v8.2.8.tar.gz",
+      "name": "bdwgc",
+      "versionInfo": "8.2.8"
+    },
+    {
+      "SPDXID": "SPDXRef-6jzkdx4kmi3mj68kgz0swrd6zs1y6ayy-python3.13-attrs-25.3.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/a/attrs/attrs-25.3.0.tar.gz",
+      "name": "attrs",
+      "versionInfo": "25.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-6kln5jc2vrflzhqjik73bq8d1bi351hj-bash-5.3p3.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/bash/bash-5.3.tar.gz",
+      "name": "bash",
+      "versionInfo": "5.3p3"
+    },
+    {
+      "SPDXID": "SPDXRef-6sdn1sma9miai8wq1h6m4b61d6gmq90w-libuv-1.51.0.drv",
+      "downloadLocation": "https://github.com/libuv/libuv/archive/v1.51.0.tar.gz",
+      "name": "libuv",
+      "versionInfo": "1.51.0"
+    },
+    {
+      "SPDXID": "SPDXRef-70fq3xh9vfr3dcfq3dx4z1ihzjbch6zj-aws-c-cal-0.9.2.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-cal/archive/v0.9.2.tar.gz",
+      "name": "aws-c-cal",
+      "versionInfo": "0.9.2"
+    },
+    {
+      "SPDXID": "SPDXRef-71hf2gznpgvq8h805h6ccrr68wqngxn7-libffi-3.5.2.drv",
+      "downloadLocation": "https://github.com/libffi/libffi/releases/download/v3.5.2/libffi-3.5.2.tar.gz",
+      "name": "libffi",
+      "versionInfo": "3.5.2"
+    },
+    {
+      "SPDXID": "SPDXRef-73klnj4cgfshlx14wf4rhjnpagpdy4r2-perl5.40.0-Clone-0.46.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/G/GA/GARU/Clone-0.46.tar.gz",
+      "name": "Clone",
+      "versionInfo": "0.46"
+    },
+    {
+      "SPDXID": "SPDXRef-75wff9ymmhy0pi5w5sz694y3w60sl2d2-cargo-1.89.0.drv",
+      "downloadLocation": "https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.gz",
+      "name": "cargo",
+      "versionInfo": "1.89.0"
+    },
+    {
+      "SPDXID": "SPDXRef-79dficgc8jvdvpdw9br47jhw5ah6s3fp-byacc-20241231.drv",
+      "downloadLocation": "https://invisible-mirror.net/archives/byacc/byacc-20241231.tgz",
+      "name": "byacc",
+      "versionInfo": "20241231"
+    },
+    {
+      "SPDXID": "SPDXRef-7b3p2dyfw1layr54vv48fbaalfs8drfa-glibc-locales-2.40-66.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/glibc/glibc-2.40.tar.xz",
+      "name": "glibc-locales",
+      "versionInfo": "2.40-66"
+    },
+    {
+      "SPDXID": "SPDXRef-7ifdwp7sgjn9yxc8ayl43kw9dvpad983-nix-util-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-util",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-7mrnbp02843awrkkcd3s3iymbc5nja4a-fakeroot-1.37.1.2.drv",
+      "downloadLocation": "https://salsa.debian.org/api/v4/projects/clint%2Ffakeroot/repository/archive.tar.gz?sha=upstream%2F1.37.1.2",
+      "name": "fakeroot",
+      "versionInfo": "1.37.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-7p6y29g2mwg4kyzh4clipgxqnij907l9-gtk-doc-1.34.0.drv",
+      "downloadLocation": "https://gitlab.gnome.org/api/v4/projects/GNOME%2Fgtk-doc/repository/archive.tar.gz?sha=1.34.0",
+      "name": "gtk-doc",
+      "versionInfo": "1.34.0"
+    },
+    {
+      "SPDXID": "SPDXRef-7pa4q240pm8nfbdwxq8537y4jizkyq04-rhash-1.4.4.drv",
+      "downloadLocation": "https://github.com/rhash/RHash/archive/v1.4.4.tar.gz",
+      "name": "rhash",
+      "versionInfo": "1.4.4"
+    },
+    {
+      "SPDXID": "SPDXRef-7xyf7wxlqpqq8gsc9w5az3z371ns2my0-python3.13-fb-re2-1.0.7.drv",
+      "downloadLocation": "https://pypi.io/packages/source/f/fb-re2/fb-re2-1.0.7.tar.gz",
+      "name": "fb-re2",
+      "versionInfo": "1.0.7"
+    },
+    {
+      "SPDXID": "SPDXRef-7xzf3fbnpiwgyrkgym2rcb5jn1dl35da-binutils-2.44.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/binutils/binutils-with-gold-2.44.tar.bz2",
+      "name": "binutils",
+      "versionInfo": "2.44"
+    },
+    {
+      "SPDXID": "SPDXRef-7y2lswpda31xs2m874yp07dk0zjnvgmf-popt-1.19.drv",
+      "downloadLocation": "https://ftp.osuosl.org/pub/rpm/popt/releases/popt-1.x/popt-1.19.tar.gz",
+      "name": "popt",
+      "versionInfo": "1.19"
+    },
+    {
+      "SPDXID": "SPDXRef-7y5may6ldzc11rqx9jfkc43swk7cnc5k-perl5.40.0-DBD-SQLite-1.74.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/I/IS/ISHIGAKI/DBD-SQLite-1.74.tar.gz",
+      "name": "DBD-SQLite",
+      "versionInfo": "1.74"
+    },
+    {
+      "SPDXID": "SPDXRef-81s6087kpqbr623z2n7wa79hvi6ndjwi-perl5.40.0-Mozilla-CA-20230821.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230821.tar.gz",
+      "name": "Mozilla-CA",
+      "versionInfo": "20230821"
+    },
+    {
+      "SPDXID": "SPDXRef-84ffndg6dqahbixlriccc0isjgigqxqs-python3.13-pytz-2025.2.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/pytz/pytz-2025.2.tar.gz",
+      "name": "pytz",
+      "versionInfo": "2025.2"
+    },
+    {
+      "SPDXID": "SPDXRef-859k1a7yz3mq37wfpzmr6il0za3vq5ka-aws-c-compression-0.3.1.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-compression/archive/v0.3.1.tar.gz",
+      "name": "aws-c-compression",
+      "versionInfo": "0.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-875w6vdbzjbamff0mcqbqbskdj71kjr9-lz4-1.10.0.drv",
+      "downloadLocation": "https://github.com/lz4/lz4/archive/v1.10.0.tar.gz",
+      "name": "lz4",
+      "versionInfo": "1.10.0"
+    },
+    {
+      "SPDXID": "SPDXRef-88016zshvh4nl7izwh09mkjw1pj6a2gj-which-2.23.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/which/which-2.23.tar.gz",
+      "name": "which",
+      "versionInfo": "2.23"
+    },
+    {
+      "SPDXID": "SPDXRef-88y6aa4bhjsccz892ylhxmhi108pwipb-boost-build-boost-1.87.0.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/boost/boost_1_87_0.tar.bz2",
+      "name": "boost-build",
+      "versionInfo": "boost-1.87.0"
+    },
+    {
+      "SPDXID": "SPDXRef-8962q64x93zf5p2h9vwc88lqxr6qdjhq-c-ares-1.34.5.drv",
+      "downloadLocation": "https://github.com/c-ares/c-ares/releases/download/v1.34.5/c-ares-1.34.5.tar.gz",
+      "name": "c-ares",
+      "versionInfo": "1.34.5"
+    },
+    {
+      "SPDXID": "SPDXRef-89lsmjp5dmfflkfk1v08030a3y9ssy89-perl5.40.0-Test-NoWarnings-1.06.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Test-NoWarnings-1.06.tar.gz",
+      "name": "Test-NoWarnings",
+      "versionInfo": "1.06"
+    },
+    {
+      "SPDXID": "SPDXRef-8a4pjwv3psv694cziyv9zdwwx3qcnrcm-perl5.40.0-Exporter-Tiny-1.006002.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Exporter-Tiny-1.006002.tar.gz",
+      "name": "Exporter-Tiny",
+      "versionInfo": "1.006002"
+    },
+    {
+      "SPDXID": "SPDXRef-8acy0cf9in2gxcivdqkhgiiz5b0ap49v-findutils-4.10.0.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/findutils/findutils-4.10.0.tar.xz",
+      "name": "findutils",
+      "versionInfo": "4.10.0"
+    },
+    {
+      "SPDXID": "SPDXRef-8m6g9kwhgdq5n95gp87mzd57b6byyw8n-libstemmer-2.2.0.drv",
+      "downloadLocation": "https://github.com/snowballstem/snowball/archive/v2.2.0.tar.gz",
+      "name": "libstemmer",
+      "versionInfo": "2.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-8r1xhhpc5s7va8wf0v2c39ycjclb0yhp-itstool-2.0.7.drv",
+      "downloadLocation": "http://files.itstool.org/itstool/itstool-2.0.7.tar.bz2",
+      "name": "itstool",
+      "versionInfo": "2.0.7"
+    },
+    {
+      "SPDXID": "SPDXRef-931zhjiqacrh4mdw7xip7w8k3ly4d27c-libbsd-0.12.2.drv",
+      "downloadLocation": "https://libbsd.freedesktop.org/releases/libbsd-0.12.2.tar.xz",
+      "name": "libbsd",
+      "versionInfo": "0.12.2"
+    },
+    {
+      "SPDXID": "SPDXRef-93f6v07psnwfhhlhjb5qp55n3jfgb4gh-mpdecimal-4.0.1.drv",
+      "downloadLocation": "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.1.tar.gz",
+      "name": "mpdecimal",
+      "versionInfo": "4.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-99l9w8anfkly4n6yyfn1g0khqiqfn8ar-docbook-xsl-ns-1.79.2.drv",
+      "downloadLocation": "https://github.com/docbook/xslt10-stylesheets/releases/download/release%2F1.79.2/docbook-xsl-1.79.2.tar.bz2",
+      "name": "docbook-xsl-ns",
+      "versionInfo": "1.79.2"
+    },
+    {
+      "SPDXID": "SPDXRef-9b55b20k9n7zb7n0ar4cbhpkqgs66mgq-autoconf-archive-2024.10.16.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/autoconf-archive/autoconf-archive-2024.10.16.tar.xz",
+      "name": "autoconf-archive",
+      "versionInfo": "2024.10.16"
+    },
+    {
+      "SPDXID": "SPDXRef-9f62q62n1wnxlv2dfgakbjz5lhxgff86-perl5.40.0-HTTP-Daemon-6.16.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-6.16.tar.gz",
+      "name": "HTTP-Daemon",
+      "versionInfo": "6.16"
+    },
+    {
+      "SPDXID": "SPDXRef-9fr8l2f3cd8wq95apc3lhlm0i7m1bfqq-db-4.8.30.drv",
+      "downloadLocation": "https://download.oracle.com/berkeley-db/db-4.8.30.tar.gz",
+      "name": "db",
+      "versionInfo": "4.8.30"
+    },
+    {
+      "SPDXID": "SPDXRef-9ghjrp8n628npnga4gr9a4px3rll1svf-python3.13-urllib3-2.5.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/u/urllib3/urllib3-2.5.0.tar.gz",
+      "name": "urllib3",
+      "versionInfo": "2.5.0"
+    },
+    {
+      "SPDXID": "SPDXRef-9pfw9klpwhv77j0sxzpr2grsc8pry9wx-nix-store-test-support-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-store-test-support",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-9qk164gs38dl1w0332v89f4qdkwc53cm-libedit-20250104-3.1.drv",
+      "downloadLocation": "https://thrysoee.dk/editline/libedit-20250104-3.1.tar.gz",
+      "name": "libedit",
+      "versionInfo": "20250104-3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-9qx73v5nwv51drhy1brzs0a4m5ch7bdk-fmt-11.2.0.drv",
+      "downloadLocation": "https://github.com/fmtlib/fmt/archive/11.2.0.tar.gz",
+      "name": "fmt",
+      "versionInfo": "11.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-9r3hiq6ij984k3m0zbh8rk9cwh0zqb84-catch2-3.10.0.drv",
+      "downloadLocation": "https://github.com/catchorg/Catch2/archive/refs/tags/v3.10.0.tar.gz",
+      "name": "catch2",
+      "versionInfo": "3.10.0"
+    },
+    {
+      "SPDXID": "SPDXRef-9s1nzdxazifz0z7mg8s9z5af6pjx2aqm-perl5.40.0-Sub-Info-0.002.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Sub-Info-0.002.tar.gz",
+      "name": "Sub-Info",
+      "versionInfo": "0.002"
+    },
+    {
+      "SPDXID": "SPDXRef-9zbizax46s10b4wj7k902r460jbgpig2-python3.13-six-1.17.0.drv",
+      "downloadLocation": "https://github.com/benjaminp/six/archive/refs/tags/1.17.0.tar.gz",
+      "name": "six",
+      "versionInfo": "1.17.0"
+    },
+    {
+      "SPDXID": "SPDXRef-a121h389a0ajhjfph81ijjg5449afing-which-2.23.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/which/which-2.23.tar.gz",
+      "name": "which",
+      "versionInfo": "2.23"
+    },
+    {
+      "SPDXID": "SPDXRef-a2irybd3garjx463qd4v61a73q71dlpk-libidn2-2.3.8.drv",
+      "downloadLocation": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz",
+      "name": "libidn2",
+      "versionInfo": "2.3.8"
+    },
+    {
+      "SPDXID": "SPDXRef-a60qwhm19iz4b59pr8k3g3hzrjjcqc5g-aws-c-http-0.10.4.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-http/archive/v0.10.4.tar.gz",
+      "name": "aws-c-http",
+      "versionInfo": "0.10.4"
+    },
+    {
+      "SPDXID": "SPDXRef-a63cfxq7h4razr0csf293lzm36ymdc5r-gtest-1.17.0.drv",
+      "downloadLocation": "https://github.com/google/googletest/archive/v1.17.0.tar.gz",
+      "name": "gtest",
+      "versionInfo": "1.17.0"
+    },
+    {
+      "SPDXID": "SPDXRef-a83p43s9ham79x29zsaqkj83cdcw1cbw-gmp-6.3.0.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/gmp/gmp-6.3.0.tar.bz2",
+      "name": "gmp",
+      "versionInfo": "6.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-aa7ccaps7mn8ss32zxa8b2qmaapi7m2w-nix-fetchers-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-fetchers",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-acql37hi10pb4sxybh628rlgs6lldlqs-python3.13-snowballstemmer-3.0.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/snowballstemmer/snowballstemmer-3.0.1.tar.gz",
+      "name": "snowballstemmer",
+      "versionInfo": "3.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-af51xss2jdzn2pjsyk805z8kd7nqgcz7-perl5.40.0-URI-5.21.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-5.21.tar.gz",
+      "name": "URI",
+      "versionInfo": "5.21"
+    },
+    {
+      "SPDXID": "SPDXRef-aghj7b96drs9045nj2dmy80dbhkagsmf-gmp-6.3.0.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/gmp/gmp-6.3.0.tar.bz2",
+      "name": "gmp",
+      "versionInfo": "6.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-aharz6y4yzjibidv1y74yz35nzm8sh2a-python3.13-hatch-vcs-0.5.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/h/hatch_vcs/hatch_vcs-0.5.0.tar.gz",
+      "name": "hatch-vcs",
+      "versionInfo": "0.5.0"
+    },
+    {
+      "SPDXID": "SPDXRef-ahcs8rk4s35f5ya51jxm68ixhsfmvxfp-python3.13-flit-core-3.12.0.drv",
+      "downloadLocation": "https://github.com/pypa/flit/archive/3.12.0.tar.gz",
+      "name": "flit-core",
+      "versionInfo": "3.12.0"
+    },
+    {
+      "SPDXID": "SPDXRef-aiwyjnhjq337mzyvnk3miwxdrryx7m6a-nix-expr-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-expr",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-ajr39dgg3sldzxcy2bc8jnmk8mwqy3r7-perl5.40.0-CGI-Fast-2.16.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-Fast-2.16.tar.gz",
+      "name": "CGI-Fast",
+      "versionInfo": "2.16"
+    },
+    {
+      "SPDXID": "SPDXRef-an2zi6vi9hzpwyszg373gi1fdhgxzrxw-perl5.40.0-Module-Build-Tiny-0.047.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-Tiny-0.047.tar.gz",
+      "name": "Module-Build-Tiny",
+      "versionInfo": "0.047"
+    },
+    {
+      "SPDXID": "SPDXRef-apkqnzrv5vzzhpvhsk48h6ijdsi3k8ii-perl5.40.0-gettext-1.07.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PV/PVANDRY/gettext-1.07.tar.gz",
+      "name": "gettext",
+      "versionInfo": "1.07"
+    },
+    {
+      "SPDXID": "SPDXRef-ar9j5jl5z155a0z3k1xnpfwl9gsycbsn-python3.13-bootstrap-installer-0.7.0.drv",
+      "downloadLocation": "https://github.com/pypa/installer/archive/0.7.0.tar.gz",
+      "name": "python3.13-bootstrap-installer",
+      "versionInfo": "0.7.0"
+    },
+    {
+      "SPDXID": "SPDXRef-axr62rinfmwylc6kwllns6qkq96zm9zg-python3.13-docutils-0.21.2.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/docutils/docutils-0.21.2.tar.gz",
+      "name": "docutils",
+      "versionInfo": "0.21.2"
+    },
+    {
+      "SPDXID": "SPDXRef-axy5l0pgwk8z6jrrnkkan4w10x0r7g6j-mdbook-linkcheck-0.7.7-vendor-staging.drv",
+      "downloadLocation": "https://github.com/Michael-F-Bryan/mdbook-linkcheck/archive/v0.7.7.tar.gz",
+      "name": "mdbook-linkcheck-0.7.7-vendor-staging",
+      "versionInfo": "0.7.7"
+    },
+    {
+      "SPDXID": "SPDXRef-ay1wqca8zm0qwfy8i0f7567b95hxglxq-lzo-2.10.drv",
+      "downloadLocation": "https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz",
+      "name": "lzo",
+      "versionInfo": "2.10"
+    },
+    {
+      "SPDXID": "SPDXRef-az3g0flhv7b0g5vv2djq3nl4m2cd7gya-libunistring-1.4.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/libunistring/libunistring-1.4.tar.gz",
+      "name": "libunistring",
+      "versionInfo": "1.4"
+    },
+    {
+      "SPDXID": "SPDXRef-b2ay3m2bhsw5p9bdz3g7anhj9nw7pl1l-python3.13-pytest-mock-3.15.0.drv",
+      "downloadLocation": "https://github.com/pytest-dev/pytest-mock/archive/refs/tags/v3.15.0.tar.gz",
+      "name": "pytest-mock",
+      "versionInfo": "3.15.0"
+    },
+    {
+      "SPDXID": "SPDXRef-b33s6b856mx1yk9qkkkwd2qbf02ykg9a-perl5.40.0-ExtUtils-Helpers-0.026.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Helpers-0.026.tar.gz",
+      "name": "ExtUtils-Helpers",
+      "versionInfo": "0.026"
+    },
+    {
+      "SPDXID": "SPDXRef-b37cyz21yri8dc4xhb07h49j69zkk0hh-gnum4-1.4.20.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/m4/m4-1.4.20.tar.bz2",
+      "name": "gnum4",
+      "versionInfo": "1.4.20"
+    },
+    {
+      "SPDXID": "SPDXRef-b5qqaixn0yp20p3v36dx116dpkrd8lh1-perl5.40.0-Test2-Harness-1.000155.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test2-Harness-1.000155.tar.gz",
+      "name": "Test2-Harness",
+      "versionInfo": "1.000155"
+    },
+    {
+      "SPDXID": "SPDXRef-ba7c49cfbfk4zrsb5nayhhk8ilkvhzyw-libblake3-1.8.2.drv",
+      "downloadLocation": "https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.8.2.tar.gz",
+      "name": "libblake3",
+      "versionInfo": "1.8.2"
+    },
+    {
+      "SPDXID": "SPDXRef-bfz9nlzd2hxl3s82hwfkr6052wkb56fw-perl5.40.0-HTTP-Negotiate-6.01.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/G/GA/GAAS/HTTP-Negotiate-6.01.tar.gz",
+      "name": "HTTP-Negotiate",
+      "versionInfo": "6.01"
+    },
+    {
+      "SPDXID": "SPDXRef-bicz8ccv949bbhvfn8kbal1jhm1ikzj0-python3.13-iniconfig-2.1.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/i/iniconfig/iniconfig-2.1.0.tar.gz",
+      "name": "iniconfig",
+      "versionInfo": "2.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-blgl03sssfpvipr6xn9pj2mz48nnbqfi-python3.13-types-setuptools-80.9.0.20250801.drv",
+      "downloadLocation": "https://pypi.io/packages/source/t/types_setuptools/types_setuptools-80.9.0.20250801.tar.gz",
+      "name": "types-setuptools",
+      "versionInfo": "80.9.0.20250801"
+    },
+    {
+      "SPDXID": "SPDXRef-bmmmfrx2f87n38pivg710jh46al1gin9-mercurial-7.1-vendor-staging.drv",
+      "downloadLocation": "https://mercurial-scm.org/release/mercurial-7.1.tar.gz",
+      "name": "mercurial-7.1-vendor-staging"
+    },
+    {
+      "SPDXID": "SPDXRef-bpi2db6b5bf8n7vlbmva2qcgr3agbvsw-perl5.40.0-Sub-Uplevel-0.2800.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz",
+      "name": "Sub-Uplevel",
+      "versionInfo": "0.2800"
+    },
+    {
+      "SPDXID": "SPDXRef-brwwxnzpsx7cql8izvkhnichhg19w272-ncurses-6.5.drv",
+      "downloadLocation": "https://invisible-island.net/archives/ncurses/ncurses-6.5.tar.gz",
+      "name": "ncurses",
+      "versionInfo": "6.5"
+    },
+    {
+      "SPDXID": "SPDXRef-bs2bi87yd6p3ksqx0jb57rva6758wlzg-libpfm-4.13.0.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/perfmon2/libpfm4/libpfm-4.13.0.tar.gz",
+      "name": "libpfm",
+      "versionInfo": "4.13.0"
+    },
+    {
+      "SPDXID": "SPDXRef-bxpi1x0y6kv8haayqj6dwn6fy950kjcm-python3.13-roman-numerals-py-3.1.0.drv",
+      "downloadLocation": "https://github.com/AA-Turner/roman-numerals/archive/refs/tags/v3.1.0.tar.gz",
+      "name": "roman-numerals-py",
+      "versionInfo": "3.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-byhjp94fyylwxh7hkdprg5aqv5djk4nv-perl5.40.0-Test-Needs-0.002010.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Test-Needs-0.002010.tar.gz",
+      "name": "Test-Needs",
+      "versionInfo": "0.002010"
+    },
+    {
+      "SPDXID": "SPDXRef-bzsa5p2fqaarjvgaj160fpkhxhmyhy4f-glibc-locales-2.40-66.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/glibc/glibc-2.40.tar.xz",
+      "name": "glibc-locales",
+      "versionInfo": "2.40-66"
+    },
+    {
+      "SPDXID": "SPDXRef-bzx7qi65nzrsbj63w2gz32big8zmnbiy-util-linux-2.41.2.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.2.tar.xz",
+      "name": "util-linux",
+      "versionInfo": "2.41.2"
+    },
+    {
+      "SPDXID": "SPDXRef-c1j0zdisjvfwjda3zw7xmjywbq3by8sx-asciidoc-10.2.1.drv",
+      "downloadLocation": "https://github.com/asciidoc-py/asciidoc-py/archive/10.2.1.tar.gz",
+      "name": "asciidoc",
+      "versionInfo": "10.2.1"
+    },
+    {
+      "SPDXID": "SPDXRef-c2gvazgmp0qxlxywsj9z1n31m88i68xf-mdbook-0.4.52-vendor-staging.drv",
+      "downloadLocation": "https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.52.tar.gz",
+      "name": "mdbook-0.4.52-vendor-staging",
+      "versionInfo": "0.4.52"
+    },
+    {
+      "SPDXID": "SPDXRef-c2wbjqqq4qa66imibyy2ip9m8lpp7j7v-libpsl-0.21.5.drv",
+      "downloadLocation": "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.lz",
+      "name": "libpsl",
+      "versionInfo": "0.21.5"
+    },
+    {
+      "SPDXID": "SPDXRef-c44k7pjyc7c4rfbj142f0rk755zxnivl-gettext-0.25.1.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/gettext/gettext-0.25.1.tar.gz",
+      "name": "gettext",
+      "versionInfo": "0.25.1"
+    },
+    {
+      "SPDXID": "SPDXRef-c4yjgpc4wlarmp76s4wa5725iy5hlinv-python3.13-pystemmer-2.2.0.1.drv",
+      "downloadLocation": "https://github.com/snowballstem/pystemmer/archive/refs/tags/v2.2.0.1.tar.gz",
+      "name": "pystemmer",
+      "versionInfo": "2.2.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-ca20dbkv417g6a823kj6lx7w3gpcsi12-lzip-1.25.drv",
+      "downloadLocation": "https://ftp.gnu.org/gnu/lzip/lzip-1.25.tar.gz",
+      "name": "lzip",
+      "versionInfo": "1.25"
+    },
+    {
+      "SPDXID": "SPDXRef-cascvxmr8dgdax210f1z4rxh9p2kqm0y-patchutils-0.3.3.drv",
+      "downloadLocation": "http://cyberelk.net/tim/data/patchutils/stable/patchutils-0.3.3.tar.xz",
+      "name": "patchutils",
+      "versionInfo": "0.3.3"
+    },
+    {
+      "SPDXID": "SPDXRef-cj472xlkmgla4g97qpbpanpljzal7a1d-libtool-2.5.4.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/libtool/libtool-2.5.4.tar.gz",
+      "name": "libtool",
+      "versionInfo": "2.5.4"
+    },
+    {
+      "SPDXID": "SPDXRef-ckc9rldfaaxk7ph18469bcw3nvw6fvhm-perl5.40.0-IO-Socket-SSL-2.083.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.083.tar.gz",
+      "name": "IO-Socket-SSL",
+      "versionInfo": "2.083"
+    },
+    {
+      "SPDXID": "SPDXRef-cknm0swqvx8w9v62xca2jiryqb568k6c-shadow-4.18.0.drv",
+      "downloadLocation": "https://github.com/shadow-maint/shadow/archive/4.18.0.tar.gz",
+      "name": "shadow",
+      "versionInfo": "4.18.0"
+    },
+    {
+      "SPDXID": "SPDXRef-cl994qr3dafv969zbp144k1ypgqxsa15-cmake-minimal-4.1.2.drv",
+      "downloadLocation": "https://cmake.org/files/v4.1/cmake-4.1.2.tar.gz",
+      "name": "cmake-minimal",
+      "versionInfo": "4.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-cpamkycnjk5c47yvi5jky2cwh17n67h4-doxygen-1.14.0.drv",
+      "downloadLocation": "https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_14_0.tar.gz",
+      "name": "doxygen",
+      "versionInfo": "1.14.0"
+    },
+    {
+      "SPDXID": "SPDXRef-cq4plynav4vb7jbrk9a6mbgn9bydbj5p-coreutils-9.8.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/coreutils/coreutils-9.8.tar.xz",
+      "name": "coreutils",
+      "versionInfo": "9.8"
+    },
+    {
+      "SPDXID": "SPDXRef-cqqgkkd1x8xp3qprf9qi02y0ydlxjxsy-libarchive-3.8.1.drv",
+      "downloadLocation": "https://github.com/libarchive/libarchive/archive/v3.8.1.tar.gz",
+      "name": "libarchive",
+      "versionInfo": "3.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-csn2adchl5yyh8kiy4mcaf3bb490zh7n-gcc-14.3.0.drv",
+      "downloadLocation": "https://mirror.koddos.net/gcc/releases/gcc-14.3.0/gcc-14.3.0.tar.xz",
+      "name": "gcc",
+      "versionInfo": "14.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-cvxl60jfgvxj1ys4gdw7c06c49iqk2rz-perl5.40.0-XS-Parse-Keyword-0.48.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PE/PEVANS/XS-Parse-Keyword-0.48.tar.gz",
+      "name": "XS-Parse-Keyword",
+      "versionInfo": "0.48"
+    },
+    {
+      "SPDXID": "SPDXRef-cwhg4lnja2qsnsc3v24qgd9b13marw7y-python3.13-markupsafe-3.0.3.drv",
+      "downloadLocation": "https://github.com/pallets/markupsafe/archive/refs/tags/3.0.3.tar.gz",
+      "name": "markupsafe",
+      "versionInfo": "3.0.3"
+    },
+    {
+      "SPDXID": "SPDXRef-cx05r775hi2i1lc8wyy9lxd97wnn5xqv-perl5.40.0-Test-Simple-1.302195.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Simple-1.302195.tar.gz",
+      "name": "Test-Simple",
+      "versionInfo": "1.302195"
+    },
+    {
+      "SPDXID": "SPDXRef-d18lgdlsyzm36858gnhj9ga249hnprkz-python3.13-importlib-metadata-8.7.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/i/importlib_metadata/importlib_metadata-8.7.0.tar.gz",
+      "name": "importlib-metadata",
+      "versionInfo": "8.7.0"
+    },
+    {
+      "SPDXID": "SPDXRef-d22d84b84air380f116svsg6hcpy0hch-bison-3.8.2.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/bison/bison-3.8.2.tar.gz",
+      "name": "bison",
+      "versionInfo": "3.8.2"
+    },
+    {
+      "SPDXID": "SPDXRef-d33qmgz95jsfwc7dhslgc70d6p3maln0-dash-0.5.12.drv",
+      "downloadLocation": "http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz",
+      "name": "dash",
+      "versionInfo": "0.5.12"
+    },
+    {
+      "SPDXID": "SPDXRef-d3azjpw4wzf6lryyl9y351kd4wq3fdiq-musl-1.2.5.drv",
+      "downloadLocation": "https://musl.libc.org/releases/musl-1.2.5.tar.gz",
+      "name": "musl",
+      "versionInfo": "1.2.5"
+    },
+    {
+      "SPDXID": "SPDXRef-d3iwbn9bg0a5p564rf1r0xpcaa80jr7j-nix-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-d4kazssyhc5vi1kgamzh2qkal0p5cq45-re2-2025-08-12.drv",
+      "downloadLocation": "https://github.com/google/re2/archive/2025-08-12.tar.gz",
+      "name": "re2",
+      "versionInfo": "2025-08-12"
+    },
+    {
+      "SPDXID": "SPDXRef-d6211i7yf546yxc10nwmabj3rsgq11kq-rapidcheck-0-unstable-2023-12-14.drv",
+      "downloadLocation": "https://github.com/emil-e/rapidcheck/archive/ff6af6fc683159deb51c543b065eba14dfcf329b.tar.gz",
+      "name": "rapidcheck",
+      "versionInfo": "0-unstable-2023-12-14"
+    },
+    {
+      "SPDXID": "SPDXRef-d6x2id3qi3s59nvyrway5r8zvam1yvky-python3.13-sphinxcontrib-applehelp-2.0.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/sphinxcontrib_applehelp/sphinxcontrib_applehelp-2.0.0.tar.gz",
+      "name": "sphinxcontrib-applehelp",
+      "versionInfo": "2.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-d9kw38f7l3r68ghnm5akg0knm0ykmy5f-python3.13-build-1.3.0.drv",
+      "downloadLocation": "https://github.com/pypa/build/archive/refs/tags/1.3.0.tar.gz",
+      "name": "build",
+      "versionInfo": "1.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-db2vzipwmb3grr53rgnhxzld5rcf158v-bluez-headers-5.83.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/bluetooth/bluez-5.83.tar.xz",
+      "name": "bluez-headers",
+      "versionInfo": "5.83"
+    },
+    {
+      "SPDXID": "SPDXRef-dglwakv8s90wyh4lva5am0xbyngjr7ar-gnugrep-3.12.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/grep/grep-3.12.tar.xz",
+      "name": "gnugrep",
+      "versionInfo": "3.12"
+    },
+    {
+      "SPDXID": "SPDXRef-di8r3a864aih3h8ywgy6f508c6pzv6cj-perl5.40.0-Test-Warn-0.37.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/B/BI/BIGJ/Test-Warn-0.37.tar.gz",
+      "name": "Test-Warn",
+      "versionInfo": "0.37"
+    },
+    {
+      "SPDXID": "SPDXRef-djsf8bkv5il66slrfgjkqnh9lxc192fp-doctest-2.4.12.drv",
+      "downloadLocation": "https://github.com/doctest/doctest/archive/refs/tags/v2.4.12.tar.gz",
+      "name": "doctest",
+      "versionInfo": "2.4.12"
+    },
+    {
+      "SPDXID": "SPDXRef-dkjnm41dw479k6x3sqx04qd623ch0dzc-python3.13-pip-25.0.1.drv",
+      "downloadLocation": "https://github.com/pypa/pip/archive/refs/tags/25.0.1.tar.gz",
+      "name": "pip",
+      "versionInfo": "25.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-dllpl886v34msws1b79khjkzi2m3jqww-python3.13-installer-0.7.0.drv",
+      "downloadLocation": "https://github.com/pypa/installer/archive/0.7.0.tar.gz",
+      "name": "installer",
+      "versionInfo": "0.7.0"
+    },
+    {
+      "SPDXID": "SPDXRef-dvgzjljbw1zg0mz9pa3xbnw6pr8mk2gw-python3.13-bootstrap-packaging-25.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/packaging/packaging-25.0.tar.gz",
+      "name": "python3.13-bootstrap-packaging",
+      "versionInfo": "25.0"
+    },
+    {
+      "SPDXID": "SPDXRef-f0n7yrbbr76sv8hncj00lpqyncjr5raz-python3.13-filelock-3.18.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/f/filelock/filelock-3.18.0.tar.gz",
+      "name": "filelock",
+      "versionInfo": "3.18.0"
+    },
+    {
+      "SPDXID": "SPDXRef-f0p01nkb4g0yazca70van48b94jb8xps-perl5.40.0-Sub-Quote-2.006008.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006008.tar.gz",
+      "name": "Sub-Quote",
+      "versionInfo": "2.006008"
+    },
+    {
+      "SPDXID": "SPDXRef-f254i1vzh5rrwaaz0rn0pda22nh6r6hd-perl5.40.0-DBI-1.644.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/DBI-1.644.tar.gz",
+      "name": "DBI",
+      "versionInfo": "1.644"
+    },
+    {
+      "SPDXID": "SPDXRef-f9izi96wq7js2271fgds2n6k0340b3w3-nix-expr-tests-run.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-expr-tests-run",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-fbvqnizl10s8k2jbl12md01lf8r5sm88-krb5-1.22.1.drv",
+      "downloadLocation": "https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz",
+      "name": "krb5-1.22.1.tar.gz",
+      "versionInfo": "5-1.22"
+    },
+    {
+      "SPDXID": "SPDXRef-ff8jll40rbng87avv4jljxj6mjlpcmmq-python3.13-defusedxml-0.8.0rc2.drv",
+      "downloadLocation": "https://github.com/tiran/defusedxml/archive/refs/tags/v0.8.0rc2.tar.gz",
+      "name": "defusedxml",
+      "versionInfo": "0.8.0rc2"
+    },
+    {
+      "SPDXID": "SPDXRef-fikj00gic6kqfxczckalhnzq8cf73n1q-perl5.40.0-App-FatPacker-0.010008.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/M/MS/MSTROUT/App-FatPacker-0.010008.tar.gz",
+      "name": "App-FatPacker",
+      "versionInfo": "0.010008"
+    },
+    {
+      "SPDXID": "SPDXRef-fjq9kp9l8r2qs8mlx2c1kfp9wqiv43zg-perl5.40.0-File-ShareDir-Install-0.14.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz",
+      "name": "File-ShareDir-Install",
+      "versionInfo": "0.14"
+    },
+    {
+      "SPDXID": "SPDXRef-fl1naqs50xhnbn8yy15yynkvhwsl2lk3-python3.13-pycodestyle-2.14.0.drv",
+      "downloadLocation": "https://github.com/PyCQA/pycodestyle/archive/refs/tags/2.14.0.tar.gz",
+      "name": "pycodestyle",
+      "versionInfo": "2.14.0"
+    },
+    {
+      "SPDXID": "SPDXRef-frf6945wax0mkzwzyr4218r6h4dq3592-nix-main-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-main",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-fw3rprfw9ymfg1yy0fznryha20c02ylg-perl5.40.0-HTTP-Message-6.45.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-6.45.tar.gz",
+      "name": "HTTP-Message",
+      "versionInfo": "6.45"
+    },
+    {
+      "SPDXID": "SPDXRef-fzvib5whiqdsdyl83iwd24cga0n97xj8-nlohmann_json-3.12.0.drv",
+      "downloadLocation": "https://github.com/nlohmann/json/archive/v3.12.0.tar.gz",
+      "name": "nlohmann_json",
+      "versionInfo": "3.12.0"
+    },
+    {
+      "SPDXID": "SPDXRef-g1i6s0m2qn3k35c5gybiwrd1z55d2j09-gnumake-4.4.1.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/make/make-4.4.1.tar.gz",
+      "name": "gnumake",
+      "versionInfo": "4.4.1"
+    },
+    {
+      "SPDXID": "SPDXRef-g2n85ny8aykvlrqlfy857n5im52l4km4-nix-main-c-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-main-c",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-g8cgwmd3wvrs9nzbmxgy9sf65cj265gi-icu4c-76.1.drv",
+      "downloadLocation": "https://github.com/unicode-org/icu/releases/download/release-76-1/icu4c-76_1-src.tgz",
+      "name": "icu4c",
+      "versionInfo": "76.1"
+    },
+    {
+      "SPDXID": "SPDXRef-gh7fjzb1xjdjmnxyba6vhphm5l93akzx-docbook2X-0.8.8.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/docbook2x/docbook2X-0.8.8.tar.gz",
+      "name": "docbook2X",
+      "versionInfo": "0.8.8"
+    },
+    {
+      "SPDXID": "SPDXRef-gjnvl59hc19qyjhpaxlf2n9q5fz8lmzl-rustc-1.89.0.drv",
+      "downloadLocation": "https://static.rust-lang.org/dist/rustc-1.89.0-src.tar.gz",
+      "name": "rustc",
+      "versionInfo": "1.89.0"
+    },
+    {
+      "SPDXID": "SPDXRef-gqpi42lbnpcd47j8pw943cdmrw38m4jl-nix-util-c-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-util-c",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-gxavm8jrdqyp03wql4cxdzkb4aar8ily-perl5.40.0-libnet-3.15.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/S/SH/SHAY/libnet-3.15.tar.gz",
+      "name": "libnet",
+      "versionInfo": "3.15"
+    },
+    {
+      "SPDXID": "SPDXRef-gyddvgyhwinx2k9invxgv6h96qx4if7n-python3.13-sphinx-8.2.3.drv",
+      "downloadLocation": "https://github.com/sphinx-doc/sphinx/archive/refs/tags/v8.2.3.tar.gz",
+      "name": "sphinx",
+      "versionInfo": "8.2.3"
+    },
+    {
+      "SPDXID": "SPDXRef-h3hgm42za17sr1pydp9m2g47yg9mnkrx-pcre2-10.46.drv",
+      "downloadLocation": "https://github.com/PhilipHazel/pcre2/releases/download/pcre2-10.46/pcre2-10.46.tar.bz2",
+      "name": "pcre2",
+      "versionInfo": "10.46"
+    },
+    {
+      "SPDXID": "SPDXRef-h6583absx9dqz147f4nyirjgm14zmx40-iana-etc-20250505.drv",
+      "downloadLocation": "https://github.com/Mic92/iana-etc/releases/download/20250505/iana-etc-20250505.tar.gz",
+      "name": "iana-etc",
+      "versionInfo": "20250505"
+    },
+    {
+      "SPDXID": "SPDXRef-h9klrxnkr0jpk0hmh7bkswk5d2hnijs1-texinfo-7.2.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/texinfo/texinfo-7.2.tar.xz",
+      "name": "texinfo",
+      "versionInfo": "7.2"
+    },
+    {
+      "SPDXID": "SPDXRef-hbl0r6ny0gkvgjkvkvsw2ic3lymc9h0n-python3.13-wheel-0.46.1.drv",
+      "downloadLocation": "https://github.com/pypa/wheel/archive/refs/tags/0.46.1.tar.gz",
+      "name": "wheel",
+      "versionInfo": "0.46.1"
+    },
+    {
+      "SPDXID": "SPDXRef-hjcyvrmfh2gv7iggzbpngm6s9hc6n7b5-zstd-1.5.7.drv",
+      "downloadLocation": "https://github.com/facebook/zstd/archive/v1.5.7.tar.gz",
+      "name": "zstd",
+      "versionInfo": "1.5.7"
+    },
+    {
+      "SPDXID": "SPDXRef-hpzm3mjvxxbiqglhiismc10b75xfblpy-perl5.40.0-YAML-Tiny-1.74.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/YAML-Tiny-1.74.tar.gz",
+      "name": "YAML-Tiny",
+      "versionInfo": "1.74"
+    },
+    {
+      "SPDXID": "SPDXRef-hrj352fds6z45y4a5b3ncqkv4vfr1kfj-busybox-1.36.1.drv",
+      "downloadLocation": "https://busybox.net/downloads/busybox-1.36.1.tar.bz2",
+      "name": "busybox",
+      "versionInfo": "1.36.1"
+    },
+    {
+      "SPDXID": "SPDXRef-hy1fawfrqkb6gk8hyc73lc2rggria8gz-texinfo-7.2.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/texinfo/texinfo-7.2.tar.xz",
+      "name": "texinfo",
+      "versionInfo": "7.2"
+    },
+    {
+      "SPDXID": "SPDXRef-hy1h0jcqmcqc5xc4vpn56xw6j3rm1bn7-ninja-1.13.1.drv",
+      "downloadLocation": "https://github.com/ninja-build/ninja/archive/v1.13.1.tar.gz",
+      "name": "ninja",
+      "versionInfo": "1.13.1"
+    },
+    {
+      "SPDXID": "SPDXRef-hzfky86nycyy07n7538z07j2fliprfpr-libcap-2.76.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz",
+      "name": "libcap",
+      "versionInfo": "2.76"
+    },
+    {
+      "SPDXID": "SPDXRef-hzxksnzvfm42gj5kgy48azh45awvyj1d-python3.13-pyproject-hooks-1.2.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/pyproject_hooks/pyproject_hooks-1.2.0.tar.gz",
+      "name": "pyproject-hooks",
+      "versionInfo": "1.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-i0vfv77gqzbfqz14gi44kx8a4w8q0p4d-toml11-4.4.0.drv",
+      "downloadLocation": "https://github.com/ToruNiina/toml11/archive/refs/tags/v4.4.0.tar.gz",
+      "name": "toml11",
+      "versionInfo": "4.4.0"
+    },
+    {
+      "SPDXID": "SPDXRef-i1gzgbamd2c8x8zf2ni5p6r15pgq91nq-perl5.40.0-Test-Requires-0.11.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz",
+      "name": "Test-Requires",
+      "versionInfo": "0.11"
+    },
+    {
+      "SPDXID": "SPDXRef-i1lspg7yam2d7cvz7r1i3frsrmwsr0r3-attr-2.5.2.drv",
+      "downloadLocation": "https://download.savannah.gnu.org/releases/attr/attr-2.5.2.tar.gz",
+      "name": "attr",
+      "versionInfo": "2.5.2"
+    },
+    {
+      "SPDXID": "SPDXRef-i4cdrlaqmy0k412spcdblyfaiyrl2m8x-python3.13-sphinx-issues-3.0.1.drv",
+      "downloadLocation": "https://github.com/sloria/sphinx-issues/archive/3.0.1.tar.gz",
+      "name": "sphinx-issues",
+      "versionInfo": "3.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-i4h95k5svwq4bw2yhq2s0a2ynd3r6vyq-perl5.40.0-Syntax-Keyword-Try-0.29.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PE/PEVANS/Syntax-Keyword-Try-0.29.tar.gz",
+      "name": "Syntax-Keyword-Try",
+      "versionInfo": "0.29"
+    },
+    {
+      "SPDXID": "SPDXRef-i5pzgjzfb6diyz3wnmgk82hckp6qwch9-perl5.40.0-Class-Method-Modifiers-2.15.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Class-Method-Modifiers-2.15.tar.gz",
+      "name": "Class-Method-Modifiers",
+      "versionInfo": "2.15"
+    },
+    {
+      "SPDXID": "SPDXRef-i91dsigkka6c3i93pgzbaj75gn3441wz-pkg-config-0.29.2.drv",
+      "downloadLocation": "https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz",
+      "name": "pkg-config",
+      "versionInfo": "0.29.2"
+    },
+    {
+      "SPDXID": "SPDXRef-iayhfl21dq6mvzy1rlw2p0bkhwl0gyfj-perl5.40.0-HTML-TagCloud-0.38.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RO/ROBERTSD/HTML-TagCloud-0.38.tar.gz",
+      "name": "HTML-TagCloud",
+      "versionInfo": "0.38"
+    },
+    {
+      "SPDXID": "SPDXRef-in93qkyi2vjymnk30205hwl01cq7fppw-perl5.40.0-HTTP-Cookies-6.10.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Cookies-6.10.tar.gz",
+      "name": "HTTP-Cookies",
+      "versionInfo": "6.10"
+    },
+    {
+      "SPDXID": "SPDXRef-ingz34qzg1qrwr2crrifcz2c8jb26k9s-nix-store-c-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-store-c",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-ip0461x8rgjzjy1fy4wv4wrdggnryr63-patchelf-0.15.2.drv",
+      "downloadLocation": "https://github.com/NixOS/patchelf/releases/download/0.15.2/patchelf-0.15.2.tar.bz2",
+      "name": "patchelf",
+      "versionInfo": "0.15.2"
+    },
+    {
+      "SPDXID": "SPDXRef-ip34n005a71zkwqsyzbxgg79sb8jk634-mpfr-4.2.2.drv",
+      "downloadLocation": "https://www.mpfr.org/mpfr-4.2.2/mpfr-4.2.2.tar.xz",
+      "name": "mpfr",
+      "versionInfo": "4.2.2"
+    },
+    {
+      "SPDXID": "SPDXRef-ivz028k4nj10yn9w23nahrvf6nz32gfx-python3.13-cffi-2.0.0.drv",
+      "downloadLocation": "https://github.com/python-cffi/cffi/archive/refs/tags/v2.0.0.tar.gz",
+      "name": "cffi",
+      "versionInfo": "2.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-iwg0lg55qdw0kj5zl1ix73rzpzffq98r-gperf-3.3.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/gperf/gperf-3.3.tar.gz",
+      "name": "gperf",
+      "versionInfo": "3.3"
+    },
+    {
+      "SPDXID": "SPDXRef-ix268pd2snrdaix2d95sjk6l0il6n3p5-python3.13-jinja2-3.1.6.drv",
+      "downloadLocation": "https://pypi.io/packages/source/j/jinja2/jinja2-3.1.6.tar.gz",
+      "name": "jinja2",
+      "versionInfo": "3.1.6"
+    },
+    {
+      "SPDXID": "SPDXRef-j4xg6f5aby7zai8w1kdniknp6nrirkbi-nix-flake-tests-run.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-flake-tests-run",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-jdrcijyn0fzp7wz79rhnf04hnwpmccik-perl5.40.0-Test-Deep-1.204.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Deep-1.204.tar.gz",
+      "name": "Test-Deep",
+      "versionInfo": "1.204"
+    },
+    {
+      "SPDXID": "SPDXRef-jjkl6bssfjrl6957aq490c4py1bp3r9c-gnused-4.9.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/sed/sed-4.9.tar.xz",
+      "name": "gnused",
+      "versionInfo": "4.9"
+    },
+    {
+      "SPDXID": "SPDXRef-jl8lg56rz5vy4qaq8f6g33z72mdmg4fh-CUnit-2.1-3.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/cunit/CUnit/2.1-3/CUnit-2.1-3.tar.bz2",
+      "name": "CUnit",
+      "versionInfo": "2.1-3"
+    },
+    {
+      "SPDXID": "SPDXRef-jqlddwr5yd7lmx7dyypw2np8blyrkw9j-curl-8.16.0.drv",
+      "downloadLocation": "https://curl.haxx.se/download/curl-8.16.0.tar.xz",
+      "name": "curl",
+      "versionInfo": "8.16.0"
+    },
+    {
+      "SPDXID": "SPDXRef-jsdn5a1pyapjdlh6f5sn0zis1wmlihd1-perl5.40.0-Module-Build-0.4234.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4234.tar.gz",
+      "name": "Module-Build",
+      "versionInfo": "0.4234"
+    },
+    {
+      "SPDXID": "SPDXRef-jvjsqk3ygcrvpg8iai7iadrvpnn9hp9c-perl5.40.0-Type-Tiny-2.004000.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-2.004000.tar.gz",
+      "name": "Type-Tiny",
+      "versionInfo": "2.004000"
+    },
+    {
+      "SPDXID": "SPDXRef-jx3yl8ivh4jgflpjxwhf2szaqmdwd5jn-python3.13-mypy-extensions-1.1.0.drv",
+      "downloadLocation": "https://github.com/python/mypy_extensions/archive/refs/tags/1.1.0.tar.gz",
+      "name": "mypy-extensions",
+      "versionInfo": "1.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-jxps9kc0cympzwlwq3cy298hrs6rqdmd-python3.13-packaging-25.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/packaging/packaging-25.0.tar.gz",
+      "name": "packaging",
+      "versionInfo": "25.0"
+    },
+    {
+      "SPDXID": "SPDXRef-jyhxm62qq19a9fc40hmmzp4zapv516fy-mdbook-0.4.52.drv",
+      "downloadLocation": "https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.52.tar.gz",
+      "name": "mdbook",
+      "versionInfo": "0.4.52"
+    },
+    {
+      "SPDXID": "SPDXRef-jz8fvk71crv9bd6bp03k2m3j919y22pq-libxslt-1.1.43.drv",
+      "downloadLocation": "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.43.tar.xz",
+      "name": "libxslt",
+      "versionInfo": "1.1.43"
+    },
+    {
+      "SPDXID": "SPDXRef-k1piwvsaqpvgkvb4pn6fyhzsjf5ky1l2-python3.13-pysocks-1.7.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/P/PySocks/PySocks-1.7.1.tar.gz",
+      "name": "pysocks",
+      "versionInfo": "1.7.1"
+    },
+    {
+      "SPDXID": "SPDXRef-k3fkxpni8wx6hq1hbc6kbcgs52qyvj78-cmake-4.1.2.drv",
+      "downloadLocation": "https://cmake.org/files/v4.1/cmake-4.1.2.tar.gz",
+      "name": "cmake",
+      "versionInfo": "4.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-k5nqqzq1lsdxhd4vmla8vwzdmgnksphr-perl5.40.0-Test-Fatal-0.017.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Fatal-0.017.tar.gz",
+      "name": "Test-Fatal",
+      "versionInfo": "0.017"
+    },
+    {
+      "SPDXID": "SPDXRef-k70jb5p55qfwd59ri7k1cnqrkrnvcsv8-libxcrypt-4.4.38.drv",
+      "downloadLocation": "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz",
+      "name": "libxcrypt",
+      "versionInfo": "4.4.38"
+    },
+    {
+      "SPDXID": "SPDXRef-kaz1bhv19132g2fy88cs3knd4v3b9piw-perl5.40.0-Test-RequiresInternet-0.05.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/M/MA/MALLEN/Test-RequiresInternet-0.05.tar.gz",
+      "name": "Test-RequiresInternet",
+      "versionInfo": "0.05"
+    },
+    {
+      "SPDXID": "SPDXRef-kbcqlcwi4nmkarq5lg9np3i6nwbj72v5-aws-c-auth-0.9.1.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-auth/archive/refs/tags/v0.9.1.tar.gz",
+      "name": "aws-c-auth",
+      "versionInfo": "0.9.1"
+    },
+    {
+      "SPDXID": "SPDXRef-kbxwfdp5ak0by3dv9m73fkd22xla8rn9-perl5.40.0-WWW-RobotRules-6.02.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/G/GA/GAAS/WWW-RobotRules-6.02.tar.gz",
+      "name": "WWW-RobotRules",
+      "versionInfo": "6.02"
+    },
+    {
+      "SPDXID": "SPDXRef-kdhd4rj1kiyc6704wfzn24zqn1r8hfky-cargo-auditable-0.6.5.drv",
+      "downloadLocation": "https://github.com/rust-secure-code/cargo-auditable/archive/v0.6.5.tar.gz",
+      "name": "cargo-auditable",
+      "versionInfo": "0.6.5"
+    },
+    {
+      "SPDXID": "SPDXRef-ki2lnrpbwkp1vb54xd56al1mgrsck9nk-perl5.40.0-Encode-Locale-1.05.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-1.05.tar.gz",
+      "name": "Encode-Locale",
+      "versionInfo": "1.05"
+    },
+    {
+      "SPDXID": "SPDXRef-kr70rm2v9v853bqxmnzaxk7am628ndrf-systemd-minimal-libs-258.drv",
+      "downloadLocation": "https://github.com/systemd/systemd/archive/v258.tar.gz",
+      "name": "systemd"
+    },
+    {
+      "SPDXID": "SPDXRef-ksj3764piciw8j300lgarv6xdvqs5i65-pciutils-3.14.0.drv",
+      "downloadLocation": "https://github.com/pciutils/pciutils/archive/v3.14.0.tar.gz",
+      "name": "pciutils",
+      "versionInfo": "3.14.0"
+    },
+    {
+      "SPDXID": "SPDXRef-kv8dkmksdgv8j6s3024229vcv8x3wzb3-perl5.40.0-Unicode-LineBreak-2019.001.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz",
+      "name": "Unicode-LineBreak",
+      "versionInfo": "2019.001"
+    },
+    {
+      "SPDXID": "SPDXRef-kw2n041rsfhs4klwymiqp94k5pf2q3jg-gnutar-1.35.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/tar/tar-1.35.tar.xz",
+      "name": "gnutar",
+      "versionInfo": "1.35"
+    },
+    {
+      "SPDXID": "SPDXRef-kxrjy6aflskdi1yz45b00qpbzdf15z8c-texinfo-7.2.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/texinfo/texinfo-7.2.tar.xz",
+      "name": "texinfo",
+      "versionInfo": "7.2"
+    },
+    {
+      "SPDXID": "SPDXRef-l0lz7h0j2d6y9yifnmwbq90d2lmkr44c-perl5.40.0-PadWalker-2.5.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RO/ROBIN/PadWalker-2.5.tar.gz",
+      "name": "PadWalker",
+      "versionInfo": "2.5"
+    },
+    {
+      "SPDXID": "SPDXRef-l1yqj074bqwfhvcxr0fj6miq8vxvf3gg-bash-5.3p3.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/bash/bash-5.3.tar.gz",
+      "name": "bash",
+      "versionInfo": "5.3p3"
+    },
+    {
+      "SPDXID": "SPDXRef-l2p36c2gqw9hzzhz1m3qkkgysp87viq8-tcl-8.6.16.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz",
+      "name": "tcl",
+      "versionInfo": "8.6.16"
+    },
+    {
+      "SPDXID": "SPDXRef-l2y3309cjydvy047nadkwnqnqfh6jnjc-c-ares-1.34.5.drv",
+      "downloadLocation": "https://github.com/c-ares/c-ares/releases/download/v1.34.5/c-ares-1.34.5.tar.gz",
+      "name": "c-ares",
+      "versionInfo": "1.34.5"
+    },
+    {
+      "SPDXID": "SPDXRef-l3g82s3hyfxnbbmavv2mhfv3j02pigyx-tcb-1.2.drv",
+      "downloadLocation": "https://github.com/openwall/tcb/archive/070cf4aa784de13c52788ac22ff611d7cbca0854.tar.gz",
+      "name": "tcb",
+      "versionInfo": "1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-l3i85ji6c1r3fjy8q1wbsy3k7ib6i5y2-perl5.40.0-Test-Memory-Cycle-1.06.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Test-Memory-Cycle-1.06.tar.gz",
+      "name": "Test-Memory-Cycle",
+      "versionInfo": "1.06"
+    },
+    {
+      "SPDXID": "SPDXRef-l3l7ashviwycra93nbngzd3il8f64fg4-perl5.40.0-Moo-2.005005.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005005.tar.gz",
+      "name": "Moo",
+      "versionInfo": "2.005005"
+    },
+    {
+      "SPDXID": "SPDXRef-l3qr8a0p7hhcj716pc2mli8sp755qn2q-nix-perl-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-perl",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-l5f1s06z131bkpk9y8a6dfd4s0wb8i1m-perl5.40.0-File-Listing-6.16.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Listing-6.16.tar.gz",
+      "name": "File-Listing",
+      "versionInfo": "6.16"
+    },
+    {
+      "SPDXID": "SPDXRef-l5yb9jx2ghvd6y7dnidi08qa31cjgwa8-perl5.40.0-IO-HTML-1.004.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/C/CJ/CJM/IO-HTML-1.004.tar.gz",
+      "name": "IO-HTML",
+      "versionInfo": "1.004"
+    },
+    {
+      "SPDXID": "SPDXRef-l6p0bsvxb32mw4ycb7mibm01acsda1b2-nix-cmd-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-cmd",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-l8aky91l0hm4qamv35bj6jh26r4lvk59-python3.13-imagesize-1.4.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/i/imagesize/imagesize-1.4.1.tar.gz",
+      "name": "imagesize",
+      "versionInfo": "1.4.1"
+    },
+    {
+      "SPDXID": "SPDXRef-l8jwbqhl3j5xm2sha4rg8maxmlmn8ghs-isl-0.20.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/libisl/isl-0.20.tar.xz",
+      "name": "isl",
+      "versionInfo": "0.20"
+    },
+    {
+      "SPDXID": "SPDXRef-lcjdzgkxs2zn2gny2rj4h0qfvpvrpbn0-perl5.40.0-XML-SAX-Base-1.09.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz",
+      "name": "XML-SAX-Base",
+      "versionInfo": "1.09"
+    },
+    {
+      "SPDXID": "SPDXRef-lfakrj1m6pcsf8y8scalsxklnjwp3k3g-abseil-cpp-20250814.1.drv",
+      "downloadLocation": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20250814.1.tar.gz",
+      "name": "abseil-cpp",
+      "versionInfo": "20250814.1"
+    },
+    {
+      "SPDXID": "SPDXRef-lfi8hij9qm33g979dh2xy7yaafm031c5-perl5.40.0-CPAN-Meta-Check-0.018.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/CPAN-Meta-Check-0.018.tar.gz",
+      "name": "CPAN-Meta-Check",
+      "versionInfo": "0.018"
+    },
+    {
+      "SPDXID": "SPDXRef-lfp992nprzjnfi1fpy8wd8q3s7gylhpg-man-db-2.13.1.drv",
+      "downloadLocation": "https://ftp.gnu.org/gnu/man-db/man-db-2.13.1.tar.xz",
+      "name": "man-db",
+      "versionInfo": "2.13.1"
+    },
+    {
+      "SPDXID": "SPDXRef-lkm63yv81b65qizmgsrbfkyjv1p3wn0p-kexec-tools-2.0.31.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/utils/kernel/kexec/kexec-tools-2.0.31.tar.xz",
+      "name": "kexec-tools",
+      "versionInfo": "2.0.31"
+    },
+    {
+      "SPDXID": "SPDXRef-llhqc1p5yxkzyfalglaingk98bl7bbzb-perl5.40.0-FCGI-Client-0.09.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/T/TO/TOKUHIROM/FCGI-Client-0.09.tar.gz",
+      "name": "FCGI-Client",
+      "versionInfo": "0.09"
+    },
+    {
+      "SPDXID": "SPDXRef-lm3jbg2p58y5gj4im5ig3hvzk6nrnrpi-spdlog-1.15.3.drv",
+      "downloadLocation": "https://github.com/gabime/spdlog/archive/refs/tags/v1.15.3.tar.gz",
+      "name": "spdlog",
+      "versionInfo": "1.15.3"
+    },
+    {
+      "SPDXID": "SPDXRef-lm937psz2mzrbad0hdqrsig43f0qc1yp-libxcrypt-4.4.38.drv",
+      "downloadLocation": "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz",
+      "name": "libxcrypt",
+      "versionInfo": "4.4.38"
+    },
+    {
+      "SPDXID": "SPDXRef-lmwgsavisgsqql05kkl91v82psa1q191-perl-5.40.0.drv",
+      "downloadLocation": "https://cpan.metacpan.org/src/5.0/perl-5.40.0.tar.gz",
+      "name": "perl",
+      "versionInfo": "5.40.0"
+    },
+    {
+      "SPDXID": "SPDXRef-lrjj2z9l3xqqpsjmcdm2si4l81d1ldm6-libmpc-1.3.1.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/mpc/mpc-1.3.1.tar.gz",
+      "name": "libmpc",
+      "versionInfo": "1.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-lsyls9pyxpqiws6pw2j0xjxmdwar936f-nghttp2-1.67.1.drv",
+      "downloadLocation": "https://github.com/nghttp2/nghttp2/releases/download/v1.67.1/nghttp2-1.67.1.tar.bz2",
+      "name": "nghttp2",
+      "versionInfo": "1.67.1"
+    },
+    {
+      "SPDXID": "SPDXRef-lw7i40as2774qczigyrn5vmyhzyrkcwf-linux-headers-6.16.7.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.16.7.tar.xz",
+      "name": "linux-headers",
+      "versionInfo": "6.16.7"
+    },
+    {
+      "SPDXID": "SPDXRef-m4ww3jdsn2i8x89kv0pgzrjfff93kapy-aws-c-io-0.22.0.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-io/archive/v0.22.0.tar.gz",
+      "name": "aws-c-io",
+      "versionInfo": "0.22.0"
+    },
+    {
+      "SPDXID": "SPDXRef-m9a9r7i0ym0ci1qdw7m41kafjn4avm8h-nix-store-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-store",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-mbd2ank88h2fykh9gvwfri8zscb8jv0z-nix-util-test-support-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-util-test-support",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-mcaav41rvan6xj1f06hazj91cvvggg8c-xmlto-0.0.29.drv",
+      "downloadLocation": "https://pagure.io/xmlto.git",
+      "name": "xmlto",
+      "versionInfo": "0.0.29"
+    },
+    {
+      "SPDXID": "SPDXRef-mgy42zhcr96mxkk12mz8200kmv1625nc-go-1.25.2.drv",
+      "downloadLocation": "https://go.dev/dl/go1.25.2.src.tar.gz",
+      "name": "go",
+      "versionInfo": "1.25.2"
+    },
+    {
+      "SPDXID": "SPDXRef-mml16vidj52wgyaadzlcs6wh14clb4y7-bison-3.8.2.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/bison/bison-3.8.2.tar.gz",
+      "name": "bison",
+      "versionInfo": "3.8.2"
+    },
+    {
+      "SPDXID": "SPDXRef-mp02hcyf1r7sbxdgqhjjcr510fabvjwr-libxcrypt-4.4.38.drv",
+      "downloadLocation": "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz",
+      "name": "libxcrypt",
+      "versionInfo": "4.4.38"
+    },
+    {
+      "SPDXID": "SPDXRef-ms669sfgcdy76z96ilnfkflcbxv5lya9-xz-5.8.1.drv",
+      "downloadLocation": "https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz",
+      "name": "xz",
+      "versionInfo": "5.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-mscihc172g28frdysd11lphx474kyllv-python3.13-sphinxcontrib-websupport-2.0.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/sphinxcontrib_websupport/sphinxcontrib_websupport-2.0.0.tar.gz",
+      "name": "sphinxcontrib-websupport",
+      "versionInfo": "2.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-mx1sivcw1ji0848d7ssqbkjkvapcsimr-python3.13-certifi-2025.07.14.drv",
+      "downloadLocation": "https://github.com/certifi/python-certifi/archive/2025.07.14.tar.gz",
+      "name": "certifi",
+      "versionInfo": "2025.07.14"
+    },
+    {
+      "SPDXID": "SPDXRef-n5wbg7hm0jcpv30p4cgx10v2spzdhjxd-python3.13-python-dateutil-2.9.0.post0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/python-dateutil/python-dateutil-2.9.0.post0.tar.gz",
+      "name": "python-dateutil",
+      "versionInfo": "2.9.0.post0"
+    },
+    {
+      "SPDXID": "SPDXRef-n9fcb0x7xcrngr0mg5044xipry4ba2jf-python3.13-calver-2025.04.17.drv",
+      "downloadLocation": "https://github.com/di/calver/archive/refs/tags/2025.04.17.tar.gz",
+      "name": "calver",
+      "versionInfo": "2025.04.17"
+    },
+    {
+      "SPDXID": "SPDXRef-nby40ry2xwxl7zp10dvrvlmavvwbdhvb-gmp-with-cxx-6.3.0.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/gmp/gmp-6.3.0.tar.bz2",
+      "name": "gmp-with-cxx",
+      "versionInfo": "6.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-nfv16507d9rjdc58gay58xjhdb497yn6-mercurial-7.1.drv",
+      "downloadLocation": "https://mercurial-scm.org/release/mercurial-7.1.tar.gz",
+      "name": "mercurial",
+      "versionInfo": "7.1"
+    },
+    {
+      "SPDXID": "SPDXRef-ngryvg02m6myyj55pc1yw7a4i5xnm98v-libpipeline-1.5.8.drv",
+      "downloadLocation": "https://ftp.gnu.org/gnu/libpipeline/libpipeline-1.5.8.tar.gz",
+      "name": "libpipeline",
+      "versionInfo": "1.5.8"
+    },
+    {
+      "SPDXID": "SPDXRef-ngw9k3mnvm1nd3ja7i72zhv16j50lkbk-python3.13-typing-extensions-4.15.0.drv",
+      "downloadLocation": "https://github.com/python/typing_extensions/archive/refs/tags/4.15.0.tar.gz",
+      "name": "typing-extensions",
+      "versionInfo": "4.15.0"
+    },
+    {
+      "SPDXID": "SPDXRef-nikvbgsn83c3y3sxmdvaxrbbnknq3qr5-swig-4.3.1.drv",
+      "downloadLocation": "https://github.com/swig/swig/archive/v4.3.1.tar.gz",
+      "name": "swig",
+      "versionInfo": "4.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-njggsfrz1p4ylp28pgnl9hkfvhvrbhki-pkg-config-0.29.2.drv",
+      "downloadLocation": "https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz",
+      "name": "pkg-config",
+      "versionInfo": "0.29.2"
+    },
+    {
+      "SPDXID": "SPDXRef-nlcd87svhwhgqf303avbnfqxrwc7wizx-boehm-gc-8.2.8.drv",
+      "downloadLocation": "https://github.com/bdwgc/bdwgc/archive/v8.2.8.tar.gz",
+      "name": "bdwgc",
+      "versionInfo": "8.2.8"
+    },
+    {
+      "SPDXID": "SPDXRef-nlnr99l8wvbdnvv5wv19a085by4c6917-aws-c-event-stream-0.5.7.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-event-stream/archive/v0.5.7.tar.gz",
+      "name": "aws-c-event-stream",
+      "versionInfo": "0.5.7"
+    },
+    {
+      "SPDXID": "SPDXRef-nngr20ainfxmz62lmg8vxl02c5w3ichg-cargo-auditable-0.6.5.drv",
+      "downloadLocation": "https://github.com/rust-secure-code/cargo-auditable/archive/v0.6.5.tar.gz",
+      "name": "cargo-auditable",
+      "versionInfo": "0.6.5"
+    },
+    {
+      "SPDXID": "SPDXRef-nv7n8vd1kfdc0v2fxdavq5cy3j3qhbhl-groff-1.23.0.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/groff/groff-1.23.0.tar.gz",
+      "name": "groff",
+      "versionInfo": "1.23.0"
+    },
+    {
+      "SPDXID": "SPDXRef-nwx3kp4da9hia7yrljvfbkm24z6j1w36-perl5.40.0-Net-HTTP-6.23.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.23.tar.gz",
+      "name": "Net-HTTP",
+      "versionInfo": "6.23"
+    },
+    {
+      "SPDXID": "SPDXRef-nzm2c1haxdzv5hbk1978xsc0hhy27ian-perl5.40.0-FCGI-ProcManager-0.28.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/A/AR/ARODLAND/FCGI-ProcManager-0.28.tar.gz",
+      "name": "FCGI-ProcManager",
+      "versionInfo": "0.28"
+    },
+    {
+      "SPDXID": "SPDXRef-p08had7vv6l1wn44v0lw192alhsk32lq-gbenchmark-1.9.4.drv",
+      "downloadLocation": "https://github.com/google/benchmark/archive/v1.9.4.tar.gz",
+      "name": "gbenchmark",
+      "versionInfo": "1.9.4"
+    },
+    {
+      "SPDXID": "SPDXRef-p0qqgd4rmpdq160cgm6d6ysay9l9zmd7-python3.13-sphinxcontrib-htmlhelp-2.1.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/sphinxcontrib_htmlhelp/sphinxcontrib_htmlhelp-2.1.0.tar.gz",
+      "name": "sphinxcontrib-htmlhelp",
+      "versionInfo": "2.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-p3myj3axymcqd3xvdb1d35dn3y2pnx2i-perl5.40.0-TimeDate-2.33.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/TimeDate-2.33.tar.gz",
+      "name": "TimeDate",
+      "versionInfo": "2.33"
+    },
+    {
+      "SPDXID": "SPDXRef-p3yxwlcgcwk5ry63604hfi525xcdvy00-perl5.40.0-HTML-Parser-3.81.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.81.tar.gz",
+      "name": "HTML-Parser",
+      "versionInfo": "3.81"
+    },
+    {
+      "SPDXID": "SPDXRef-p44xi19ci4lnlji5si2r71fc7klg92vc-perl5.40.0-Test2-Plugin-MemUsage-0.002003.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test2-Plugin-MemUsage-0.002003.tar.gz",
+      "name": "Test2-Plugin-MemUsage",
+      "versionInfo": "0.002003"
+    },
+    {
+      "SPDXID": "SPDXRef-p51i1llvf1zyr67mqajcrygpkgp565rr-python3.13-psutil-7.1.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/psutil/psutil-7.1.0.tar.gz",
+      "name": "psutil",
+      "versionInfo": "7.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-p5i739y60jlsmkp678rxah26panl9wvm-python3.13-sphinxcontrib-devhelp-2.0.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/sphinxcontrib_devhelp/sphinxcontrib_devhelp-2.0.0.tar.gz",
+      "name": "sphinxcontrib-devhelp",
+      "versionInfo": "2.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-p78jg8w9pxmyy1ln16mqkn6173hncka8-perl5.40.0-SGMLSpm-1.1.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz",
+      "name": "SGMLSpm",
+      "versionInfo": "1.1"
+    },
+    {
+      "SPDXID": "SPDXRef-p78syrvly0lz68qw3k2clmy3vkbvjgk4-glibc-2.40-66.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/glibc/glibc-2.40.tar.xz",
+      "name": "glibc",
+      "versionInfo": "2.40-66"
+    },
+    {
+      "SPDXID": "SPDXRef-p9267g6pjlh3jv5fmpx2a92kl28fqlvb-bmake-20250804.drv",
+      "downloadLocation": "https://www.crufty.net/ftp/pub/sjg/bmake-20250804.tar.gz",
+      "name": "bmake",
+      "versionInfo": "20250804"
+    },
+    {
+      "SPDXID": "SPDXRef-pb0dp5kqq9fbl9y5cwfkbvg556bcx5c5-nix-fetchers-c-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-fetchers-c",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-pbh9flydgs7yaikq1mxz33g7bj4cldf7-perl5.40.0-Try-Tiny-0.31.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.31.tar.gz",
+      "name": "Try-Tiny",
+      "versionInfo": "0.31"
+    },
+    {
+      "SPDXID": "SPDXRef-pczwfl3fsdc04qb0klc83r4khg3b71jm-python3.13-editables-0.5.drv",
+      "downloadLocation": "https://pypi.io/packages/source/e/editables/editables-0.5.tar.gz",
+      "name": "editables",
+      "versionInfo": "0.5"
+    },
+    {
+      "SPDXID": "SPDXRef-pfslc2krga43w7j2v9kwgk26hz6j7745-libcap-ng-0.8.5.drv",
+      "downloadLocation": "https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.5.tar.gz",
+      "name": "libcap-ng",
+      "versionInfo": "0.8.5"
+    },
+    {
+      "SPDXID": "SPDXRef-pgdgz34zl8rg2gcxffhv2j7v337l21aw-binutils-2.44.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/binutils/binutils-with-gold-2.44.tar.bz2",
+      "name": "binutils",
+      "versionInfo": "2.44"
+    },
+    {
+      "SPDXID": "SPDXRef-phqwykhlm2aqz3hxabmx231s5j4sp01y-publicsuffix-list-0-unstable-2025-08-28.drv",
+      "downloadLocation": "https://github.com/publicsuffix/list/archive/4103956c4300902436b03d7da482536e757b3601.tar.gz",
+      "name": "publicsuffix-list",
+      "versionInfo": "0-unstable-2025-08-28"
+    },
+    {
+      "SPDXID": "SPDXRef-pidyzjds8kywmdlzf0b9cckvpiaryly5-perl5.40.0-Scope-Guard-0.21.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz",
+      "name": "Scope-Guard",
+      "versionInfo": "0.21"
+    },
+    {
+      "SPDXID": "SPDXRef-pnyfdkbk150335ibnhyzxv2x3y2wly69-curl-8.16.0.drv",
+      "downloadLocation": "https://curl.haxx.se/download/curl-8.16.0.tar.xz",
+      "name": "curl",
+      "versionInfo": "8.16.0"
+    },
+    {
+      "SPDXID": "SPDXRef-ppdvac1mnnm3376bi24ci9ih42kxqnnl-python3.13-pyflakes-3.4.0.drv",
+      "downloadLocation": "https://github.com/PyCQA/pyflakes/archive/refs/tags/3.4.0.tar.gz",
+      "name": "pyflakes",
+      "versionInfo": "3.4.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pqddk8whc79nbmx10f89hpk7831alygp-libsodium-1.0.20.drv",
+      "downloadLocation": "https://download.libsodium.org/libsodium/releases/libsodium-1.0.20.tar.gz",
+      "name": "libsodium",
+      "versionInfo": "1.0.20"
+    },
+    {
+      "SPDXID": "SPDXRef-ps1rzi7nqg7lyq8jy5p6q15fshhlplps-re2c-4.3.drv",
+      "downloadLocation": "https://github.com/skvadrik/re2c/archive/4.3.tar.gz",
+      "name": "re2c",
+      "versionInfo": "4.3"
+    },
+    {
+      "SPDXID": "SPDXRef-px879f19sknp07p674p8fdwhnq7fa312-openssl-3.6.0.drv",
+      "downloadLocation": "https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz",
+      "name": "openssl",
+      "versionInfo": "3.6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-pyag98cd7bpqv7s4vpg6sfvkv4z6fwcx-aws-c-mqtt-0.13.3.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-mqtt/archive/v0.13.3.tar.gz",
+      "name": "aws-c-mqtt",
+      "versionInfo": "0.13.3"
+    },
+    {
+      "SPDXID": "SPDXRef-q1vwacwql8q1qckjwj4v7p2j9cy31b37-bzip2-1.0.8.drv",
+      "downloadLocation": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+      "name": "bzip2",
+      "versionInfo": "1.0.8"
+    },
+    {
+      "SPDXID": "SPDXRef-q5s16vnpb9jrxjiwsyvn3rms5yl1w5s1-perl5.40.0-libwww-perl-6.72.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.72.tar.gz",
+      "name": "libwww-perl",
+      "versionInfo": "6.72"
+    },
+    {
+      "SPDXID": "SPDXRef-q73zbzdpc3jmwqqv8k066x1xwgzj52v1-python3.13-bootstrap-build-1.3.0.drv",
+      "downloadLocation": "https://github.com/pypa/build/archive/refs/tags/1.3.0.tar.gz",
+      "name": "python3.13-bootstrap-build",
+      "versionInfo": "1.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-q7mf2p1nihb39la38pcr1rr9wb3c078p-patchutils-0.4.2.drv",
+      "downloadLocation": "http://cyberelk.net/tim/data/patchutils/stable/patchutils-0.4.2.tar.xz",
+      "name": "patchutils",
+      "versionInfo": "0.4.2"
+    },
+    {
+      "SPDXID": "SPDXRef-qabf8kc1wl566y6vqgys523359nshnv3-coreutils-9.8.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/coreutils/coreutils-9.8.tar.xz",
+      "name": "coreutils",
+      "versionInfo": "9.8"
+    },
+    {
+      "SPDXID": "SPDXRef-qb0phs5jl6mlwy3l6r9y85mr172xn4zf-s2n-tls-1.5.26.drv",
+      "downloadLocation": "https://github.com/aws/s2n-tls/archive/v1.5.26.tar.gz",
+      "name": "s2n-tls",
+      "versionInfo": "1.5.26"
+    },
+    {
+      "SPDXID": "SPDXRef-qc3dnnr86vplsx0588g7ah2433l3505p-libssh2-1.11.1.drv",
+      "downloadLocation": "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz",
+      "name": "libssh2",
+      "versionInfo": "1.11.1"
+    },
+    {
+      "SPDXID": "SPDXRef-qcgippxabdsfa8nm9gfxsf9gvbskzzdw-getopt-1.1.6.drv",
+      "downloadLocation": "http://frodo.looijaard.name/system/files/software/getopt/getopt-1.1.6.tar.gz",
+      "name": "getopt",
+      "versionInfo": "1.1.6"
+    },
+    {
+      "SPDXID": "SPDXRef-qd9blh0caic29cs9rkhi53zjj7brn7hs-python3.13-bootstrap-packaging-25.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/packaging/packaging-25.0.tar.gz",
+      "name": "python3.13-bootstrap-packaging",
+      "versionInfo": "25.0"
+    },
+    {
+      "SPDXID": "SPDXRef-qghd08f3p8x8njx2875ka4ynib1kq4ph-nix-fetchers-tests-run.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-fetchers-tests-run",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-qhhl24596pxdp14z1xi86ba2s9fc9rl2-file-5.45.drv",
+      "downloadLocation": "https://astron.com/pub/file/file-5.45.tar.gz",
+      "name": "file",
+      "versionInfo": "5.45"
+    },
+    {
+      "SPDXID": "SPDXRef-qhwazqv1vz4i9dl3fkw4kkkxpf3rsadl-perl5.40.0-Capture-Tiny-0.48.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.48.tar.gz",
+      "name": "Capture-Tiny",
+      "versionInfo": "0.48"
+    },
+    {
+      "SPDXID": "SPDXRef-qi1r15z0igrak8vib3ggdqsva9g3s1j7-libxml2-2.15.0.drv",
+      "downloadLocation": "https://gitlab.gnome.org/api/v4/projects/GNOME%2Flibxml2/repository/archive.tar.gz?sha=refs%2Ftags%2Fv2.15.0",
+      "name": "libxml2",
+      "versionInfo": "2.15.0"
+    },
+    {
+      "SPDXID": "SPDXRef-qk16np2i3ls20ih6n8lc38l6f3y6s7i3-jq-1.8.1.drv",
+      "downloadLocation": "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-1.8.1.tar.gz",
+      "name": "jq",
+      "versionInfo": "1.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-qlvngfny7yx45b61ny12vmapbb3xapcd-perl5.40.0-Net-SMTP-SSL-1.04.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Net-SMTP-SSL-1.04.tar.gz",
+      "name": "Net-SMTP-SSL",
+      "versionInfo": "1.04"
+    },
+    {
+      "SPDXID": "SPDXRef-qr1kk0jygdmcspdm0fr86bfhl7qr2prv-python3.13-tomli-w-1.2.0.drv",
+      "downloadLocation": "https://github.com/hukkin/tomli-w/archive/1.2.0.tar.gz",
+      "name": "tomli-w",
+      "versionInfo": "1.2.0"
+    },
+    {
+      "SPDXID": "SPDXRef-qvnakgfi92jhmjxpb96hypp0r2lzjy9x-openssl-3.6.0.drv",
+      "downloadLocation": "https://github.com/openssl/openssl/releases/download/openssl-3.6.0/openssl-3.6.0.tar.gz",
+      "name": "openssl",
+      "versionInfo": "3.6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-qyrmvv4mk2b9ndmv0v12z2xzls6phkyn-acl-2.3.2.drv",
+      "downloadLocation": "https://download.savannah.gnu.org/releases/acl/acl-2.3.2.tar.gz",
+      "name": "acl",
+      "versionInfo": "2.3.2"
+    },
+    {
+      "SPDXID": "SPDXRef-r2ykzg62nkwnjh631y4kyby3q74phr9g-bc-1.08.2.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/bc/bc-1.08.2.tar.lz",
+      "name": "bc",
+      "versionInfo": "1.08.2"
+    },
+    {
+      "SPDXID": "SPDXRef-r4ymr0qa6vi193b9d72xqy2g7zypak2p-xgcc-14.3.0.drv",
+      "downloadLocation": "https://mirror.koddos.net/gcc/releases/gcc-14.3.0/gcc-14.3.0.tar.xz",
+      "name": "xgcc",
+      "versionInfo": "14.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-r6qcx51cqkngb4mlnwys898w97m82q0g-llhttp-9.3.0.drv",
+      "downloadLocation": "https://github.com/nodejs/llhttp/archive/refs/tags/release/v9.3.0.tar.gz",
+      "name": "llhttp",
+      "versionInfo": "9.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-r76dkix6jxp16a5j879l0352map1cckl-perl5.40.0-XML-Parser-2.46.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
+      "name": "XML-Parser",
+      "versionInfo": "2.46"
+    },
+    {
+      "SPDXID": "SPDXRef-rc2a4pjzsrcv9lf5zqkzhjq6d5jj6s6v-python3.13-alabaster-1.0.0.drv",
+      "downloadLocation": "https://github.com/sphinx-doc/alabaster/archive/refs/tags/1.0.0.tar.gz",
+      "name": "alabaster",
+      "versionInfo": "1.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-rgc3kncy84h5r4pz8h4a2rhcn99y1bal-python3.13-trove-classifiers-2025.9.11.17.drv",
+      "downloadLocation": "https://pypi.io/packages/source/t/trove_classifiers/trove_classifiers-2025.9.11.17.tar.gz",
+      "name": "trove-classifiers",
+      "versionInfo": "2025.9.11.17"
+    },
+    {
+      "SPDXID": "SPDXRef-rwdz8kd9vghccmw3ziwb4rwgmfb4k7bx-perl-5.40.0.drv",
+      "downloadLocation": "https://cpan.metacpan.org/src/5.0/perl-5.40.0.tar.gz",
+      "name": "perl",
+      "versionInfo": "5.40.0"
+    },
+    {
+      "SPDXID": "SPDXRef-rxcw8ndyaz10zbq3vxyhaivg914l3lhr-bash-5.3p3.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/bash/bash-5.3.tar.gz",
+      "name": "bash",
+      "versionInfo": "5.3p3"
+    },
+    {
+      "SPDXID": "SPDXRef-rz8ff8ilil1l34qkxh0zxsp770w0b2k2-python3.13-mccabe-0.7.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/m/mccabe/mccabe-0.7.0.tar.gz",
+      "name": "mccabe",
+      "versionInfo": "0.7.0"
+    },
+    {
+      "SPDXID": "SPDXRef-s05vvamsgs7qwdk7mfc6fcqgpxwz6bnx-python3.13-html5lib-1.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/h/html5lib/html5lib-1.1.tar.gz",
+      "name": "html5lib",
+      "versionInfo": "1.1"
+    },
+    {
+      "SPDXID": "SPDXRef-s07p32pm60ynna4jyy8ngghaxc21jyi1-perl5.40.0-Pod-Parser-1.66.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/M/MA/MAREKR/Pod-Parser-1.66.tar.gz",
+      "name": "Pod-Parser",
+      "versionInfo": "1.66"
+    },
+    {
+      "SPDXID": "SPDXRef-s0i8yzhga2n1llya5f6i41rcmrqx1cp0-bash-5.3p3.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/bash/bash-5.3.tar.gz",
+      "name": "bash",
+      "versionInfo": "5.3p3"
+    },
+    {
+      "SPDXID": "SPDXRef-s1l6ml6mfj5s09yxqiisrbzj54cb0m0w-meson-1.9.1.drv",
+      "downloadLocation": "https://github.com/mesonbuild/meson/archive/refs/tags/1.9.1.tar.gz",
+      "name": "meson",
+      "versionInfo": "1.9.1"
+    },
+    {
+      "SPDXID": "SPDXRef-s52n6shhg2mzwxz7l4g561jiwv0r4gac-perl5.40.0-goto-file-0.005.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/goto-file-0.005.tar.gz",
+      "name": "goto-file",
+      "versionInfo": "0.005"
+    },
+    {
+      "SPDXID": "SPDXRef-s65rmp7h8qc9y75gzq5jpwcsmprx4xx6-perl5.40.0-Importer-0.026.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Importer-0.026.tar.gz",
+      "name": "Importer",
+      "versionInfo": "0.026"
+    },
+    {
+      "SPDXID": "SPDXRef-s6g3ldshahl5rh4kciwzr544129yvqrp-perl5.40.0-Test2-Plugin-UUID-0.002001.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test2-Plugin-UUID-0.002001.tar.gz",
+      "name": "Test2-Plugin-UUID",
+      "versionInfo": "0.002001"
+    },
+    {
+      "SPDXID": "SPDXRef-s6xaqlycmw8f9m0qas1fsj2w766l7pps-docbook-xml-4.2.drv",
+      "downloadLocation": "https://docbook.org/xml/4.2/docbook-xml-4.2.zip",
+      "name": "docbook-xml",
+      "versionInfo": "4.2"
+    },
+    {
+      "SPDXID": "SPDXRef-s8chd0nghv0xjvgbpwd9j44cnsbz99li-readline-8.3p1.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/readline/readline-8.3.tar.gz",
+      "name": "readline",
+      "versionInfo": "8.3p1"
+    },
+    {
+      "SPDXID": "SPDXRef-s9xhbjr9fdyk49r0h0fxvw91dxcbyyip-expect-5.45.4.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/expect/Expect/5.45.4/expect5.45.4.tar.gz",
+      "name": "expect",
+      "versionInfo": "5.45.4"
+    },
+    {
+      "SPDXID": "SPDXRef-sapkp6w9g7clfvi8i7ba4m1dd890sgwg-nix-manual-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-manual",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-sgdgr71mf0vqpz4clsxns6dq5h2q8ra1-nix-util-tests-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-util-tests",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-shcfqsf0ifhkbdsq2i7j80zpjakcx6l7-python3.13-setuptools-80.9.0.drv",
+      "downloadLocation": "https://github.com/pypa/setuptools/archive/refs/tags/v80.9.0.tar.gz",
+      "name": "setuptools",
+      "versionInfo": "80.9.0"
+    },
+    {
+      "SPDXID": "SPDXRef-sjkr8q29im18i6dggdhk6f28v21c0flw-python3.13-pytest-8.4.2.drv",
+      "downloadLocation": "https://pypi.io/packages/source/p/pytest/pytest-8.4.2.tar.gz",
+      "name": "pytest",
+      "versionInfo": "8.4.2"
+    },
+    {
+      "SPDXID": "SPDXRef-slxzkf0wv3kp7pvk3yii36hysn9x4kkh-python3.13-toml-0.10.2.drv",
+      "downloadLocation": "https://pypi.io/packages/source/t/toml/toml-0.10.2.tar.gz",
+      "name": "toml",
+      "versionInfo": "0.10.2"
+    },
+    {
+      "SPDXID": "SPDXRef-sniydz5zl2r6bam7i6idkckh16ndhhzp-sqlite-3.50.4.drv",
+      "downloadLocation": "https://sqlite.org/2025/sqlite-autoconf-3500400.tar.gz",
+      "name": "sqlite",
+      "versionInfo": "3.50.4"
+    },
+    {
+      "SPDXID": "SPDXRef-sq0kil1c44qd321b3iglb49nc3xy03g6-python3.13-pytest-xdist-3.8.0.drv",
+      "downloadLocation": "https://github.com/pytest-dev/pytest-xdist/archive/refs/tags/v3.8.0.tar.gz",
+      "name": "pytest-xdist",
+      "versionInfo": "3.8.0"
+    },
+    {
+      "SPDXID": "SPDXRef-sqa27jrdiki6jdmg47fir9rya3mb3kgb-gettext-0.25.1.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.25.1.tar.gz",
+      "name": "gettext",
+      "versionInfo": "0.25.1"
+    },
+    {
+      "SPDXID": "SPDXRef-sqf5fgv4z1mlr9srr5ck7m939rmmd4yq-python3.13-bootstrap-tomli-2.2.1.drv",
+      "downloadLocation": "https://github.com/hukkin/tomli/archive/2.2.1.tar.gz",
+      "name": "python3.13-bootstrap-tomli",
+      "versionInfo": "2.2.1"
+    },
+    {
+      "SPDXID": "SPDXRef-srhrlqkbp90i3l282dy10pivyxxd7iz8-perl5.40.0-Long-Jump-0.000001.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Long-Jump-0.000001.tar.gz",
+      "name": "Long-Jump",
+      "versionInfo": "0.000001"
+    },
+    {
+      "SPDXID": "SPDXRef-srslyazdxv4dxrxpslpkvgaakv35vbkr-mailcap-2.1.54.drv",
+      "downloadLocation": "https://releases.pagure.org/mailcap/mailcap-2.1.54.tar.xz",
+      "name": "mailcap",
+      "versionInfo": "2.1.54"
+    },
+    {
+      "SPDXID": "SPDXRef-v594f9z51f4r8nkshrgncp0qlrbzccck-perl5.40.0-ExtUtils-Config-0.008.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Config-0.008.tar.gz",
+      "name": "ExtUtils-Config",
+      "versionInfo": "0.008"
+    },
+    {
+      "SPDXID": "SPDXRef-v8qs74jibrc3h9hv4h3q928g9n0qzw3q-python3.13-zope-interface-7.2.drv",
+      "downloadLocation": "https://github.com/zopefoundation/zope.interface/archive/refs/tags/7.2.tar.gz",
+      "name": "zope-interface",
+      "versionInfo": "7.2"
+    },
+    {
+      "SPDXID": "SPDXRef-vfx5l7hkcz65r1n25apjlqw5p50v3613-perl5.40.0-Digest-HMAC-1.05.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/A/AR/ARODLAND/Digest-HMAC-1.05.tar.gz",
+      "name": "Digest-HMAC",
+      "versionInfo": "1.05"
+    },
+    {
+      "SPDXID": "SPDXRef-vh3z6zxmr0xk8xx4b493bj8zx5l00nmb-python3.13-charset-normalizer-3.4.3.drv",
+      "downloadLocation": "https://github.com/jawah/charset_normalizer/archive/refs/tags/3.4.3.tar.gz",
+      "name": "charset-normalizer",
+      "versionInfo": "3.4.3"
+    },
+    {
+      "SPDXID": "SPDXRef-vhfy3mpdqdwc7p74nlf4zb9bd0izwvnb-python3.13-gevent-25.5.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/g/gevent/gevent-25.5.1.tar.gz",
+      "name": "gevent",
+      "versionInfo": "25.5.1"
+    },
+    {
+      "SPDXID": "SPDXRef-vs8d29rzvbjx6nx4ma2phhqgawhly8f0-expat-2.7.3.drv",
+      "downloadLocation": "https://github.com/libexpat/libexpat/releases/download/R_2_7_3/expat-2.7.3.tar.xz",
+      "name": "expat",
+      "versionInfo": "2.7.3"
+    },
+    {
+      "SPDXID": "SPDXRef-vsnpvg5x0wfklzq5z2x0lmdq37kspfbr-perl5.40.0-MIME-Charset-1.013.1.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/N/NE/NEZUMI/MIME-Charset-1.013.1.tar.gz",
+      "name": "MIME-Charset",
+      "versionInfo": "1.013.1"
+    },
+    {
+      "SPDXID": "SPDXRef-vvjcrk47xv1hlvm1y9s9rgd7d8p6bsp5-lndir-1.0.5.drv",
+      "downloadLocation": "https://xorg.freedesktop.org/releases/individual/util/lndir-1.0.5.tar.xz",
+      "name": "lndir",
+      "versionInfo": "1.0.5"
+    },
+    {
+      "SPDXID": "SPDXRef-vz1gkrraw2s5rqzhzn0h4b33jz8nyilq-perl5.40.0-ExtUtils-InstallPaths-0.012.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-InstallPaths-0.012.tar.gz",
+      "name": "ExtUtils-InstallPaths",
+      "versionInfo": "0.012"
+    },
+    {
+      "SPDXID": "SPDXRef-w2nhds09r35ak11v5pv6xm9bzhy5bx7c-autoconf-2.72.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/autoconf/autoconf-2.72.tar.xz",
+      "name": "autoconf",
+      "versionInfo": "2.72"
+    },
+    {
+      "SPDXID": "SPDXRef-w35hsih8lri76gqpyjb5kddd91a1wrjf-python3.13-pytest-asyncio-1.1.0.drv",
+      "downloadLocation": "https://github.com/pytest-dev/pytest-asyncio/archive/refs/tags/v1.1.0.tar.gz",
+      "name": "pytest-asyncio",
+      "versionInfo": "1.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-w461dvjzd94jzqr7djl6zy0ii9rp3pm7-perl5.40.0-Role-Tiny-2.002004.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Role-Tiny-2.002004.tar.gz",
+      "name": "Role-Tiny",
+      "versionInfo": "2.002004"
+    },
+    {
+      "SPDXID": "SPDXRef-w518kh7x5hc9r27xxg5fihkaq2fqw0bh-aws-sdk-cpp-1.11.647.drv",
+      "downloadLocation": "https://github.com/aws/aws-sdk-cpp/archive/refs/tags/1.11.647.tar.gz",
+      "name": "aws-sdk-cpp",
+      "versionInfo": "1.11.647"
+    },
+    {
+      "SPDXID": "SPDXRef-w6p4w00jygl9dvzvzfi0xblynfaf87v4-perl5.40.0-Net-SSLeay-1.92.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.92.tar.gz",
+      "name": "Net-SSLeay",
+      "versionInfo": "1.92"
+    },
+    {
+      "SPDXID": "SPDXRef-w9dci6p3p6n3561fz12426c7yx3vbnk3-perl-5.40.0.drv",
+      "downloadLocation": "https://cpan.metacpan.org/src/5.0/perl-5.40.0.tar.gz",
+      "name": "perl",
+      "versionInfo": "5.40.0"
+    },
+    {
+      "SPDXID": "SPDXRef-w9n3g8mc2rdrp5d8prgj877x2h6ar4j3-perl5.40.0-HTTP-Date-6.06.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-6.06.tar.gz",
+      "name": "HTTP-Date",
+      "versionInfo": "6.06"
+    },
+    {
+      "SPDXID": "SPDXRef-wgvqbaa5dm2ys36l23bb3kl96257k9vl-byacc-20241231.drv",
+      "downloadLocation": "https://invisible-mirror.net/archives/byacc/byacc-20241231.tgz",
+      "name": "byacc",
+      "versionInfo": "20241231"
+    },
+    {
+      "SPDXID": "SPDXRef-wia8s2ja0q8bx5dn7ihg2pbm8v8a8xcb-aws-c-sdkutils-0.2.4.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-sdkutils/archive/v0.2.4.tar.gz",
+      "name": "aws-c-sdkutils",
+      "versionInfo": "0.2.4"
+    },
+    {
+      "SPDXID": "SPDXRef-wlfmmvfnfg7hn5fk21cq3wsndlmnc0l9-nix-expr-tests-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-expr-tests",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-wrfp9a0xmgkjl5wl1hyxnpghr4qw4y51-aws-c-common-0.12.4.drv",
+      "downloadLocation": "https://github.com/awslabs/aws-c-common/archive/v0.12.4.tar.gz",
+      "name": "aws-c-common",
+      "versionInfo": "0.12.4"
+    },
+    {
+      "SPDXID": "SPDXRef-wrph1chx1hifmndmdcl8gm59a2j2qbky-perl5.40.0-Crypt-URandom-0.54.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/D/DD/DDICK/Crypt-URandom-0.54.tar.gz",
+      "name": "Crypt-URandom",
+      "versionInfo": "0.54"
+    },
+    {
+      "SPDXID": "SPDXRef-wwrh06nwcwspihdw4pzzhyv8n9jyp008-bash-5.3p3.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/bash/bash-5.3.tar.gz",
+      "name": "bash",
+      "versionInfo": "5.3p3"
+    },
+    {
+      "SPDXID": "SPDXRef-x0jj8jhmy22invz7mfg9agy79jlk74bh-patchelf-0.15.2.drv",
+      "downloadLocation": "https://github.com/NixOS/patchelf/releases/download/0.15.2/patchelf-0.15.2.tar.bz2",
+      "name": "patchelf",
+      "versionInfo": "0.15.2"
+    },
+    {
+      "SPDXID": "SPDXRef-x34q7ikmcn5lc2rr1gxj0lcmg8lggznz-cargo-auditable-0.6.5-vendor-staging.drv",
+      "downloadLocation": "https://github.com/rust-secure-code/cargo-auditable/archive/v0.6.5.tar.gz",
+      "name": "cargo-auditable-0.6.5-vendor-staging",
+      "versionInfo": "0.6.5"
+    },
+    {
+      "SPDXID": "SPDXRef-x39kv5mw91s6r73lyjbx23i9klp1hrnj-llvm-tblgen-src-21.1.2.drv",
+      "downloadLocation": "https://github.com/llvm/llvm-project/archive/llvmorg-21.1.2.tar.gz",
+      "name": "llvm-tblgen-src",
+      "versionInfo": "21.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-x40g8szgwp4ggj4w2dih77a451lmn1dm-perl5.40.0-File-ShareDir-1.118.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/R/RE/REHSACK/File-ShareDir-1.118.tar.gz",
+      "name": "File-ShareDir",
+      "versionInfo": "1.118"
+    },
+    {
+      "SPDXID": "SPDXRef-x5ljw2kvh4k7q9i6g2wny2vbsapzd53a-autoconf-2.72.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/autoconf/autoconf-2.72.tar.xz",
+      "name": "autoconf",
+      "versionInfo": "2.72"
+    },
+    {
+      "SPDXID": "SPDXRef-x6jmjl75lv7q6xhkp69ymacz7jzvq4ma-python3.13-babel-2.17.0.drv",
+      "downloadLocation": "https://pypi.io/packages/source/b/babel/babel-2.17.0.tar.gz",
+      "name": "babel",
+      "versionInfo": "2.17.0"
+    },
+    {
+      "SPDXID": "SPDXRef-x8h4rxwvyyi128a4w1cin7bz3zz5yinc-python3.13-greenlet-3.2.3.drv",
+      "downloadLocation": "https://pypi.io/packages/source/g/greenlet/greenlet-3.2.3.tar.gz",
+      "name": "greenlet",
+      "versionInfo": "3.2.3"
+    },
+    {
+      "SPDXID": "SPDXRef-x8rk3kdc5wq8qw840g414q3gya0sl1ys-python3.13-idna-3.10.drv",
+      "downloadLocation": "https://pypi.io/packages/source/i/idna/idna-3.10.tar.gz",
+      "name": "idna",
+      "versionInfo": "3.10"
+    },
+    {
+      "SPDXID": "SPDXRef-x9pvww1ag4ddjj4cwbjhqk5483wrnigs-nss-cacert-certdata-3.115.drv",
+      "downloadLocation": "https://github.com/nss-dev/nss/archive/NSS_3_115_RTM.tar.gz",
+      "name": "nss-cacert-certdata",
+      "versionInfo": "3.115"
+    },
+    {
+      "SPDXID": "SPDXRef-xach3yz6q4byrb4s3gm69z1d9cy5hkj2-krb5-1.22.1.drv",
+      "downloadLocation": "https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz",
+      "name": "krb5-1.22.1.tar.gz",
+      "versionInfo": "5-1.22"
+    },
+    {
+      "SPDXID": "SPDXRef-xj3mpmf7kb991f4x3q1xf9l8v1w0ixjf-python3.13-sphinxcontrib-jsmath-1.0.1.drv",
+      "downloadLocation": "https://pypi.io/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz",
+      "name": "sphinxcontrib-jsmath",
+      "versionInfo": "1.0.1"
+    },
+    {
+      "SPDXID": "SPDXRef-xl43zzc118z5pv1ijs9g0bbfs072zk05-automake-1.16.5.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/automake/automake-1.16.5.tar.xz",
+      "name": "automake",
+      "versionInfo": "1.16.5"
+    },
+    {
+      "SPDXID": "SPDXRef-xmvrdlpydi85cd7mycvmdhyf949ixx75-perl5.40.0-Test-Warnings-0.032.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-0.032.tar.gz",
+      "name": "Test-Warnings",
+      "versionInfo": "0.032"
+    },
+    {
+      "SPDXID": "SPDXRef-xs0wpisf2hvkyync4lpx38xgqmjaqn5q-gawk-5.3.2.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/gawk/gawk-5.3.2.tar.xz",
+      "name": "gawk",
+      "versionInfo": "5.3.2"
+    },
+    {
+      "SPDXID": "SPDXRef-xs3rbddfhr4iarwmiadd8lj5i741izzw-mpfr-4.2.2.drv",
+      "downloadLocation": "https://www.mpfr.org/mpfr-4.2.2/mpfr-4.2.2.tar.xz",
+      "name": "mpfr",
+      "versionInfo": "4.2.2"
+    },
+    {
+      "SPDXID": "SPDXRef-xv3lv1wi5c6phj1v0p21fwwm7wah8zgp-ed-1.22.2.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/ed/ed-1.22.2.tar.lz",
+      "name": "ed",
+      "versionInfo": "1.22.2"
+    },
+    {
+      "SPDXID": "SPDXRef-xygssm24mgzrca231n0mm1a40c0pia7h-python3.13-cython-3.1.4.drv",
+      "downloadLocation": "https://github.com/cython/cython/archive/refs/tags/3.1.4.tar.gz",
+      "name": "cython",
+      "versionInfo": "3.1.4"
+    },
+    {
+      "SPDXID": "SPDXRef-xzra2zf73c5spqp5lfp1xqybsynwpspi-w3m-0.5.5.drv",
+      "downloadLocation": "https://git.sr.ht/~rkta/w3m/archive/v0.5.5.tar.gz",
+      "name": "w3m",
+      "versionInfo": "0.5.5"
+    },
+    {
+      "SPDXID": "SPDXRef-y45mamap38hpjz7ni1s8hbnmb1qhrl9j-isl-0.20.drv",
+      "downloadLocation": "https://downloads.sourceforge.net/libisl/isl-0.20.tar.xz",
+      "name": "isl",
+      "versionInfo": "0.20"
+    },
+    {
+      "SPDXID": "SPDXRef-y6ms4h98lkw8k5hygwxgi51wcgkdxv57-ksh-2020.0.0.drv",
+      "downloadLocation": "https://github.com/att/ast/archive/refs/tags/2020.0.0.tar.gz",
+      "name": "ksh",
+      "versionInfo": "2020.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-yh73y300l9r1csw9zghd7im341rrp106-curl-8.16.0.drv",
+      "downloadLocation": "https://curl.haxx.se/download/curl-8.16.0.tar.xz",
+      "name": "curl",
+      "versionInfo": "8.16.0"
+    },
+    {
+      "SPDXID": "SPDXRef-ylj9vmh0v2rwg57fnq15f6zaxw65p63p-python3.13-flake8-7.3.0.drv",
+      "downloadLocation": "https://github.com/PyCQA/flake8/archive/refs/tags/7.3.0.tar.gz",
+      "name": "flake8",
+      "versionInfo": "7.3.0"
+    },
+    {
+      "SPDXID": "SPDXRef-yqn5bsjg1x1im9a6vxj137qaipp9la2g-docbook-xml-4.3.drv",
+      "downloadLocation": "https://docbook.org/xml/4.3/docbook-xml-4.3.zip",
+      "name": "docbook-xml",
+      "versionInfo": "4.3"
+    },
+    {
+      "SPDXID": "SPDXRef-yskiakldnm85y7ayp0l795l6mw4fhadk-perl5.40.0-LWP-MediaTypes-6.04.drv",
+      "downloadLocation": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz",
+      "name": "LWP-MediaTypes",
+      "versionInfo": "6.04"
+    },
+    {
+      "SPDXID": "SPDXRef-yvgav67jjncqw98hj417zij66f4wrdc7-zlib-ng-2.2.5.drv",
+      "downloadLocation": "https://github.com/zlib-ng/zlib-ng/archive/2.2.5.tar.gz",
+      "name": "zlib-ng",
+      "versionInfo": "2.2.5"
+    },
+    {
+      "SPDXID": "SPDXRef-yvw961z73k3j4ibizmac5r7xmvx181hg-libxml2-2.15.0.drv",
+      "downloadLocation": "https://gitlab.gnome.org/api/v4/projects/GNOME%2Flibxml2/repository/archive.tar.gz?sha=refs%2Ftags%2Fv2.15.0",
+      "name": "libxml2",
+      "versionInfo": "2.15.0"
+    },
+    {
+      "SPDXID": "SPDXRef-ywicsxx5nmpxd9nh9p98pqnn2daz14b3-automake-1.18.1.drv",
+      "downloadLocation": "https://ftpmirror.gnu.org/automake/automake-1.18.1.tar.xz",
+      "name": "automake",
+      "versionInfo": "1.18.1"
+    },
+    {
+      "SPDXID": "SPDXRef-z8886dx38j6r2hw58x7w8fc574vc5v7n-pkg-config-0.29.2.drv",
+      "downloadLocation": "https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz",
+      "name": "pkg-config",
+      "versionInfo": "0.29.2"
+    },
+    {
+      "SPDXID": "SPDXRef-z9nnzxjawnz3jd4nncklg510d5j8k66r-hwdata-0.400.drv",
+      "downloadLocation": "https://github.com/vcrhonek/hwdata/archive/v0.400.tar.gz",
+      "name": "hwdata",
+      "versionInfo": "0.400"
+    },
+    {
+      "SPDXID": "SPDXRef-zbannprmnh4cvxwkxb0r6xgyrz6gnnvm-util-linux-minimal-2.41.2.drv",
+      "downloadLocation": "https://cdn.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.2.tar.xz",
+      "name": "util-linux-minimal",
+      "versionInfo": "2.41.2"
+    },
+    {
+      "SPDXID": "SPDXRef-zbsx9mwq8p7hi552b0lz2jnlq8cd63mk-dejagnu-1.6.3.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/dejagnu/dejagnu-1.6.3.tar.gz",
+      "name": "dejagnu",
+      "versionInfo": "1.6.3"
+    },
+    {
+      "SPDXID": "SPDXRef-zc1zdansjr0a9y2y6wcbdm8w3s7y4960-nix-util-test-support-2.31.2.drv",
+      "downloadLocation": "https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz",
+      "name": "nix-util-test-support",
+      "versionInfo": "2.31.2"
+    },
+    {
+      "SPDXID": "SPDXRef-zc8vfmqcgy7dv7533vh5j8vm8dg21zns-python3.13-pluggy-1.6.0.drv",
+      "downloadLocation": "https://github.com/pytest-dev/pluggy/archive/refs/tags/1.6.0.tar.gz",
+      "name": "pluggy",
+      "versionInfo": "1.6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-zmv32g29s2h41mhmr286y4kdq40hl86w-mdbook-linkcheck-0.7.7.drv",
+      "downloadLocation": "https://github.com/Michael-F-Bryan/mdbook-linkcheck/archive/v0.7.7.tar.gz",
+      "name": "mdbook-linkcheck",
+      "versionInfo": "0.7.7"
+    },
+    {
+      "SPDXID": "SPDXRef-zmvz48vk3s6x838r27cnapax8bpnzvdy-libssh2-1.11.1.drv",
+      "downloadLocation": "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz",
+      "name": "libssh2",
+      "versionInfo": "1.11.1"
+    },
+    {
+      "SPDXID": "SPDXRef-znx5g0r8wr9bkl1zfz0sa4kq2r1gvjq3-gnum4-1.4.20.drv",
+      "downloadLocation": "https://ftp.gnu.org/pub/gnu/m4/m4-1.4.20.tar.bz2",
+      "name": "gnum4",
+      "versionInfo": "1.4.20"
+    },
+    {
+      "SPDXID": "SPDXRef-zqirf0v54ldw63bid4nkw7zrlpfxv6p7-perl-5.40.0.drv",
+      "downloadLocation": "https://cpan.metacpan.org/src/5.0/perl-5.40.0.tar.gz",
+      "name": "perl",
+      "versionInfo": "5.40.0"
+    }
+  ],
+  "relationships": [],
+  "spdxVersion": "SPDX-2.3"
+}
