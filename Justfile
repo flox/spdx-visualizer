@@ -22,8 +22,8 @@ show spdx_file +EXTRA="":
         sleep 1  # Give server time to start
     fi
 
-    # Convert relative path to absolute from invocation directory
-    spdx_path=$(realpath "{{invocation_directory()}}/{{spdx_file}}")
+    # Convert to absolute path (handles relative, absolute, and tilde paths)
+    spdx_path=$(cd "{{invocation_directory()}}" && realpath "{{spdx_file}}")
 
     # Generate mermaid diagram to temp file (mmdc doesn't handle stdin properly)
     uv run spdx-to-mermaid "$spdx_path" {{EXTRA}} > "$mmd_file"
