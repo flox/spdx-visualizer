@@ -10,7 +10,9 @@ show spdx_file +EXTRA="":
     set -euo pipefail
     # Paths
     project_dir="{{justfile_directory()}}"
-    mmd_file=$(mktemp --suffix=.mmd)
+    temp_base=$(mktemp)
+    mmd_file="${temp_base}.mmd"
+    mv "$temp_base" "$mmd_file"
     svg_file="$project_dir/diagram.svg"
     viewer_html="$project_dir/viewer.html"
     config_path="$project_dir/mermaid-config.json"
