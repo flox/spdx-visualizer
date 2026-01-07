@@ -31,10 +31,11 @@ show spdx_file +EXTRA="":
     uv run spdx-to-mermaid "$spdx_path" {{EXTRA}} > "$mmd_file"
 
     # Convert to SVG (viewer.html expects diagram.svg in project root)
-    mmdc -i "$mmd_file" -o "$svg_file" --configFile "$config_path"
+    mmdc -i "$mmd_file" -o "$svg_file" --configFile "$config_path" -p "$project_dir/puppeteer-config.json"
 
     # Open viewer in browser via HTTP (avoids CORS issues)
-    xdg-open "http://localhost:3000/viewer.html"
+    # Unset CHROME_DEVEL_SANDBOX to avoid Nix sandbox issues on non-NixOS
+    CHROME_DEVEL_SANDBOX="" chromium --no-sandbox "http://localhost:3000/viewer.html"
 
     # Cleanup temp mermaid file only (keep diagram.svg for viewer)
     rm -f "$mmd_file"
