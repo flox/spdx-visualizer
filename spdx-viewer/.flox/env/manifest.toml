@@ -37,14 +37,154 @@ spdx-to-mermaid.systems = ["x86_64-linux"]
 ##  ... run by _bash_ shell when you run 'flox activate'.
 ## -------------------------------------------------------------------
 [hook]
-# on-activate = '''
-#   # -> Set variables, create files and directories
-#   # -> Perform initialization steps, e.g. create a python venv
-#   # -> Useful environment variables:
-#   #      - FLOX_ENV_PROJECT=/home/user/example
-#   #      - FLOX_ENV=/home/user/example/.flox/run
-#   #      - FLOX_ENV_CACHE=/home/user/example/.flox/cache
-# '''
+on-activate = '''
+  # Create viewer assets if they don't exist
+  if [ ! -f "$FLOX_ENV_PROJECT/viewer.html" ]; then
+    cat > "$FLOX_ENV_PROJECT/viewer.html" << 'EOF_VIEWER'
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SVG Viewer</title>
+  <style>
+    html, body { margin:0; height:100%; overflow:hidden; background:#111; }
+    iframe { width:100%; height:100%; border:none; }
+    .hud {
+      position:fixed; top:10px; left:10px; z-index:10;
+      font:14px system-ui; color:#eee; background:#000a; padding:6px 8px; border-radius:8px;
+    }
+    button { margin-right:6px; }
+  </style>
+</head>
+<body>
+  <div class="hud">
+    <button id="zin">+</button>
+    <button id="zout">−</button>
+    <button id="reset">reset</button>
+    <span id="zread">100.0%</span>
+  </div>
+
+  <iframe id="svgFrame" src="diagram.svg"></iframe>
+
+  <script>
+    const frame = document.getElementById('svgFrame');
+    const zread = document.getElementById('zread');
+    let state = { scale: 1, x: 0, y: 0 };
+    let svg, g;
+
+    function apply() {
+      if (!g) return;
+      g.setAttribute('transform', `translate(${state.x},${state.y}) scale(${state.scale})`);
+      zread.textContent = (state.scale * 100).toFixed(1) + '%';
+    }
+
+    frame.addEventListener('load', () => {
+      try {
+        svg = frame.contentDocument || frame.contentWindow.document;
+        console.log('Frame loaded, document:', svg);
+
+        if (!svg) {
+          console.error('Cannot access frame document');
+          zread.textContent = 'Error: Cannot access SVG';
+          return;
+        }
+
+        const root = svg.documentElement;
+        console.log('SVG root:', root);
+
+        // Wrap all contents in a group
+        g = svg.createElementNS('http://www.w3.org/2000/svg', 'g');
+        while (root.firstChild) {
+          g.appendChild(root.firstChild);
+        }
+        root.appendChild(g);
+
+        apply();
+
+        let dragging = false, lastX = 0, lastY = 0;
+
+        // Zoom
+        root.addEventListener('wheel', (e) => {
+          e.preventDefault();
+          const factor = e.deltaY < 0 ? 1.12 : 0.89;
+
+          // cursor position in screen coords (relative to iframe content)
+          const cx = e.clientX;
+          const cy = e.clientY;
+
+          // adjust translation so point under cursor stays put
+          state.x = cx - factor * (cx - state.x);
+          state.y = cy - factor * (cy - state.y);
+          state.scale *= factor;
+
+          apply();
+        }, { passive: false });
+
+        // Pan
+        root.addEventListener('mousedown', (e) => {
+          dragging = true;
+          lastX = e.clientX;
+          lastY = e.clientY;
+          e.preventDefault();
+        });
+
+        root.addEventListener('mousemove', (e) => {
+          if (!dragging) return;
+          // Scale pan speed by current zoom level for more responsive panning
+          const panSpeed = Math.max(1, state.scale * 2);
+          state.x += (e.clientX - lastX) * panSpeed;
+          state.y += (e.clientY - lastY) * panSpeed;
+          lastX = e.clientX;
+          lastY = e.clientY;
+          apply();
+        });
+
+        root.addEventListener('mouseup', () => { dragging = false; });
+        root.addEventListener('mouseleave', () => { dragging = false; });
+
+      } catch(err) {
+        console.error('Error accessing frame:', err);
+        zread.textContent = 'Error: ' + err.message;
+      }
+    });
+
+    // Buttons
+    document.getElementById('zin').onclick = () => { state.scale *= 1.25; apply(); };
+    document.getElementById('zout').onclick = () => { state.scale /= 1.25; apply(); };
+    document.getElementById('reset').onclick = () => { state = {scale:1,x:0,y:0}; apply(); };
+  </script>
+</body>
+</html>
+EOF_VIEWER
+  fi
+
+  if [ ! -f "$FLOX_ENV_PROJECT/mermaid-config.json" ]; then
+    cat > "$FLOX_ENV_PROJECT/mermaid-config.json" << 'EOF_MERMAID'
+{
+  "maxTextSize": 1000000,
+  "maxEdges": 10000,
+  "flowchart": { "htmlLabels": false },
+  "sequence": { "htmlLabels": false },
+  "class": { "htmlLabels": false },
+  "state": { "htmlLabels": false },
+  "er": { "htmlLabels": false },
+  "gantt": { "htmlLabels": false },
+  "journey": { "htmlLabels": false },
+  "mindmap": { "htmlLabels": false },
+  "timeline": { "htmlLabels": false },
+  "htmlLabels": false
+}
+EOF_MERMAID
+  fi
+
+  if [ ! -f "$FLOX_ENV_PROJECT/puppeteer-config.json" ]; then
+    cat > "$FLOX_ENV_PROJECT/puppeteer-config.json" << 'EOF_PUPPETEER'
+{
+  "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+}
+EOF_PUPPETEER
+  fi
+'''
 
 
 ## Profile script ----------------------------------------------------
