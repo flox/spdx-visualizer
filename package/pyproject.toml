@@ -21,3 +21,9 @@ spdx-to-mermaid = "src.spdx_to_mermaid:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "dist/",
+  "*.egg-info/",
+]
