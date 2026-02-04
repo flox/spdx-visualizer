@@ -225,10 +225,25 @@ common = '''
     fi
 
     # Generate mermaid diagram
-    spdx-to-mermaid "$spdx_file" $extra_args > "$mmd_file"
+    if ! spdx-to-mermaid "$spdx_file" $extra_args > "$mmd_file"; then
+      echo "Error: spdx-to-mermaid failed"
+      rm -f "$mmd_file"
+      return 1
+    fi
+
+    # Check if mermaid file has content
+    if [ ! -s "$mmd_file" ]; then
+      echo "Error: spdx-to-mermaid produced no output"
+      rm -f "$mmd_file"
+      return 1
+    fi
 
     # Convert to SVG
-    mmdc -i "$mmd_file" -o "$svg_file" --configFile "$config_path" -p "$FLOX_ENV_PROJECT/puppeteer-config.json"
+    if ! mmdc -i "$mmd_file" -o "$svg_file" --configFile "$config_path" -p "$FLOX_ENV_PROJECT/puppeteer-config.json"; then
+      echo "Error: Failed to convert mermaid diagram to SVG"
+      rm -f "$mmd_file"
+      return 1
+    fi
 
     # Open in browser
     CHROME_DEVEL_SANDBOX="" chromium --no-sandbox "http://localhost:3000/viewer.html"
@@ -256,10 +271,26 @@ common = '''
     mv "$temp_base" "$mmd_file"
 
     # Generate and convert
-    spdx-to-mermaid "$spdx_file" $extra_args > "$mmd_file"
-    mmdc -i "$mmd_file" -o "$output" --configFile "$FLOX_ENV_PROJECT/mermaid-config.json"
-    rm -f "$mmd_file"
+    if ! spdx-to-mermaid "$spdx_file" $extra_args > "$mmd_file"; then
+      echo "Error: spdx-to-mermaid failed"
+      rm -f "$mmd_file"
+      return 1
+    fi
 
+    # Check if mermaid file has content
+    if [ ! -s "$mmd_file" ]; then
+      echo "Error: spdx-to-mermaid produced no output"
+      rm -f "$mmd_file"
+      return 1
+    fi
+
+    if ! mmdc -i "$mmd_file" -o "$output" --configFile "$FLOX_ENV_PROJECT/mermaid-config.json"; then
+      echo "Error: Failed to convert mermaid diagram to SVG"
+      rm -f "$mmd_file"
+      return 1
+    fi
+
+    rm -f "$mmd_file"
     echo "Created $output"
   }
 
