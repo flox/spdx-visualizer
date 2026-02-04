@@ -2,6 +2,12 @@
 
 A Python tool that converts SPDX (Software Package Data Exchange) files into Mermaid tree diagrams. Visualizes packages, files, relationships, and metadata from SPDX documents.
 
+**🚀 Ready to visualize SPDX files?** Check out the [SPDX Viewer Environment](spdx-viewer/) for a standalone, shareable environment with web-based visualization:
+```bash
+flox activate -r flox/spdx-viewer
+spdx-show your-file.spdx.json
+```
+
 ## Features
 
 - **Comprehensive visualization** of SPDX elements: packages, files, snippets, and relationships
