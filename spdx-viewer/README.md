@@ -94,12 +94,14 @@ flox activate
 spdx-viewer/
 ├── .flox/              # Flox environment configuration
 │   └── env/
-│       └── manifest.toml # Includes bash functions in [profile]
-├── viewer.html         # Interactive diagram viewer
-├── mermaid-config.json # Mermaid rendering configuration
-├── puppeteer-config.json # Browser automation config
+│       └── manifest.toml # Includes bash functions + asset files
+├── viewer.html         # Created on activation from manifest
+├── mermaid-config.json # Created on activation from manifest
+├── puppeteer-config.json # Created on activation from manifest
 └── README.md          # This file
 ```
+
+**Note:** The viewer assets (viewer.html, mermaid-config.json, puppeteer-config.json) are embedded in the manifest and written to the project directory on first activation. This makes the environment fully self-contained when pushed to FloxHub.
 
 ## Differences from Development Environment
 
