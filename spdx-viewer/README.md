@@ -2,6 +2,13 @@
 
 A standalone Flox environment for visualizing SPDX files as interactive Mermaid diagrams.
 
+## Usage
+
+```bash
+flox activate -r flox/spdx-viewer
+spdx-show spdx-doc.json
+```
+
 ## Features
 
 - **Web-based viewer** with zoom and pan controls
