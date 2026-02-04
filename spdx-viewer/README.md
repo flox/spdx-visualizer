@@ -9,20 +9,6 @@ A standalone Flox environment for visualizing SPDX files as interactive Mermaid 
 - **Lightweight** - installs published `spdx-to-mermaid` package from FloxHub
 - **Shareable** - push this environment to FloxHub for team use
 
-## Prerequisites
-
-The `spdx-to-mermaid` package must be published to FloxHub first. Once published:
-
-1. Uncomment the package in `.flox/env/manifest.toml`:
-   ```toml
-   spdx-to-mermaid.pkg-path = "spdx-to-mermaid"
-   ```
-
-2. Update the environment:
-   ```bash
-   flox install
-   ```
-
 ## Quick Start
 
 ### View an SPDX file
@@ -32,28 +18,55 @@ The `spdx-to-mermaid` package must be published to FloxHub first. Once published
 flox activate
 
 # View an SPDX file (opens in browser)
-just show /path/to/file.spdx.json
+spdx-show /path/to/file.spdx.json
 
-# Or manually:
-spdx-to-mermaid file.spdx.json > diagram.mmd
-mmdc -i diagram.mmd -o diagram.svg --configFile mermaid-config.json
-flox services start http-server
-chromium http://localhost:3000/viewer.html
+# View with options
+spdx-show /path/to/file.spdx.json --compact --max-packages 20
 ```
 
 ### Available Commands
 
-- `just show <file>` - Convert and view SPDX file in browser
-- `flox services start http-server` - Start the HTTP server manually
-- `flox services stop` - Stop all services
+When you activate the environment, these bash functions are available:
+
+- **`spdx-show <file> [options]`** - Convert and view SPDX file in browser
+- **`spdx-svg <file> [output.svg] [options]`** - Convert SPDX to SVG file
+- **`spdx-to-mermaid <file> [options]`** - Convert SPDX to Mermaid diagram (stdout)
+- **`spdx-serve`** - Start the HTTP server manually
+- **`spdx-stop`** - Stop all services
+
+#### Examples
+
+```bash
+# Basic visualization
+spdx-show myfile.spdx.json
+
+# Compact view with limited packages
+spdx-show myfile.spdx.json --compact --max-packages 10
+
+# Create SVG file
+spdx-svg myfile.spdx.json output.svg
+
+# Create Mermaid markdown
+spdx-to-mermaid myfile.spdx.json > diagram.md
+```
 
 ## Environment Contents
 
-- **spdx-to-mermaid** - CLI tool for converting SPDX to Mermaid (from FloxHub)
+### Packages
+- **spdx-to-mermaid** - CLI tool for converting SPDX to Mermaid (from flox/spdx-to-mermaid)
 - **mermaid-cli** - Renders Mermaid diagrams to SVG
 - **chromium** - Browser for viewing diagrams (Linux only)
 - **python3** - HTTP server for serving viewer
-- **HTTP server service** - Automatic web server on port 3000
+
+### Services
+- **http-server** - Web server on port 3000 for viewing diagrams
+
+### Shell Functions
+The environment provides convenient bash functions (defined in the profile):
+- `spdx-show` - Interactive viewer
+- `spdx-svg` - SVG conversion
+- `spdx-serve` - Start server
+- `spdx-stop` - Stop services
 
 ## Sharing on FloxHub
 
@@ -80,10 +93,11 @@ flox activate
 ```
 spdx-viewer/
 ├── .flox/              # Flox environment configuration
+│   └── env/
+│       └── manifest.toml # Includes bash functions in [profile]
 ├── viewer.html         # Interactive diagram viewer
 ├── mermaid-config.json # Mermaid rendering configuration
 ├── puppeteer-config.json # Browser automation config
-├── Justfile           # Convenience commands
 └── README.md          # This file
 ```
 
@@ -91,9 +105,10 @@ spdx-viewer/
 
 This viewer environment is separate from the main development environment:
 
-- **No build tools** - Uses published package instead of building
+- **No build tools** - Uses published `flox/spdx-to-mermaid` package
 - **No source code** - Only visualization tools
-- **Lightweight** - Faster to set up and share
-- **Shareable** - Can be pushed to FloxHub
+- **Lightweight** - Minimal dependencies (no `just`, `uv`, or dev tools)
+- **Self-contained** - All commands are bash functions in the environment profile
+- **Shareable** - Can be pushed to FloxHub for team use
 
-The main development environment at the repository root includes build configuration, Python source code, and publishing tools.
+The main development environment at the repository root includes build configuration, Python source code, `uv`, and publishing tools.

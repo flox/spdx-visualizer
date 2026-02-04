@@ -10,18 +10,23 @@
           "aarch64-linux"
         ]
       },
-      "just": {
-        "pkg-path": "just"
-      },
       "mermaid-cli": {
         "pkg-path": "mermaid-cli"
       },
       "python3": {
         "pkg-path": "python3"
+      },
+      "spdx-to-mermaid": {
+        "pkg-path": "flox/spdx-to-mermaid",
+        "systems": [
+          "x86_64-linux"
+        ]
       }
     },
     "hook": {},
-    "profile": {},
+    "profile": {
+      "common": "  # SPDX Viewer Functions\n\n  # Show SPDX file as interactive SVG diagram in browser\n  spdx-show() {\n    if [ $# -eq 0 ]; then\n      echo \"Usage: spdx-show <spdx-file> [options]\"\n      echo \"Example: spdx-show file.spdx.json --compact --max-packages 10\"\n      return 1\n    fi\n\n    local spdx_file=\"$1\"\n    shift\n    local extra_args=\"$@\"\n\n    # Resolve to absolute path\n    spdx_file=$(realpath \"$spdx_file\")\n\n    # Create temp file for mermaid\n    local temp_base=$(mktemp)\n    local mmd_file=\"${temp_base}.mmd\"\n    mv \"$temp_base\" \"$mmd_file\"\n\n    local svg_file=\"$FLOX_ENV_PROJECT/diagram.svg\"\n    local config_path=\"$FLOX_ENV_PROJECT/mermaid-config.json\"\n\n    # Start HTTP server if not running\n    if ! lsof -i:3000 -sTCP:LISTEN -t >/dev/null 2>&1; then\n      echo \"Starting HTTP server...\"\n      flox services start http-server\n      sleep 1\n    fi\n\n    # Generate mermaid diagram\n    spdx-to-mermaid \"$spdx_file\" $extra_args > \"$mmd_file\"\n\n    # Convert to SVG\n    mmdc -i \"$mmd_file\" -o \"$svg_file\" --configFile \"$config_path\" -p \"$FLOX_ENV_PROJECT/puppeteer-config.json\"\n\n    # Open in browser\n    CHROME_DEVEL_SANDBOX=\"\" chromium --no-sandbox \"http://localhost:3000/viewer.html\"\n\n    # Cleanup\n    rm -f \"$mmd_file\"\n  }\n\n  # Convert SPDX to SVG file\n  spdx-svg() {\n    if [ $# -eq 0 ]; then\n      echo \"Usage: spdx-svg <spdx-file> [output.svg] [options]\"\n      echo \"Example: spdx-svg file.spdx.json diagram.svg --compact\"\n      return 1\n    fi\n\n    local spdx_file=\"$1\"\n    local output=\"${2:-diagram.svg}\"\n    shift 2 2>/dev/null || shift 1\n    local extra_args=\"$@\"\n\n    # Create temp file\n    local temp_base=$(mktemp)\n    local mmd_file=\"${temp_base}.mmd\"\n    mv \"$temp_base\" \"$mmd_file\"\n\n    # Generate and convert\n    spdx-to-mermaid \"$spdx_file\" $extra_args > \"$mmd_file\"\n    mmdc -i \"$mmd_file\" -o \"$output\" --configFile \"$FLOX_ENV_PROJECT/mermaid-config.json\"\n    rm -f \"$mmd_file\"\n\n    echo \"Created $output\"\n  }\n\n  # Start HTTP server\n  spdx-serve() {\n    flox services start http-server\n    echo \"HTTP server started on http://localhost:3000\"\n  }\n\n  # Stop all services\n  spdx-stop() {\n    flox services stop\n  }\n\n  echo \"SPDX Viewer environment activated!\"\n  echo \"\"\n  echo \"Available commands:\"\n  echo \"  spdx-show <file>         - View SPDX file as interactive diagram\"\n  echo \"  spdx-svg <file> [out]    - Convert SPDX to SVG file\"\n  echo \"  spdx-to-mermaid <file>   - Convert SPDX to Mermaid (stdout)\"\n  echo \"  spdx-serve               - Start HTTP server\"\n  echo \"  spdx-stop                - Stop services\"\n  echo \"\"\n"
+    },
     "options": {},
     "services": {
       "http-server": {
@@ -33,28 +38,28 @@
     {
       "attr_path": "chromium",
       "broken": false,
-      "derivation": "/nix/store/pxmj29kirqwxiisylyx5icdc75sxpng5-chromium-144.0.7559.109.drv",
+      "derivation": "/nix/store/90i3f88lhjan28pdfw4x0hpddv640sz0-chromium-142.0.7444.59.drv",
       "description": "Open source web browser from Google",
       "install_id": "chromium",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "chromium-144.0.7559.109",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "chromium-142.0.7444.59",
       "pname": "chromium",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T05:05:33.798803Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:28:57.649470Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "144.0.7559.109",
+      "version": "142.0.7444.59",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/d17n64c121h6sa2vqrkld9qb3ml80fl1-chromium-144.0.7559.109",
-        "sandbox": "/nix/store/q8wlf1ysx5dm8sryybl4smfcqj842x61-chromium-144.0.7559.109-sandbox"
+        "out": "/nix/store/j292mp595k3l5wy1gh5nx5i4l327d3iw-chromium-142.0.7444.59",
+        "sandbox": "/nix/store/hsns1zvgcf2d0gjsh5nvzyvhnnkn24qx-chromium-142.0.7444.59-sandbox"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -63,156 +68,28 @@
     {
       "attr_path": "chromium",
       "broken": false,
-      "derivation": "/nix/store/dn66qy2v64k3y4s7sh5p4ykyq4krbvb7-chromium-144.0.7559.109.drv",
+      "derivation": "/nix/store/kjjx24pgqi120fsxlclwhd9340f6bpgh-chromium-142.0.7444.59.drv",
       "description": "Open source web browser from Google",
       "install_id": "chromium",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "chromium-144.0.7559.109",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "chromium-142.0.7444.59",
       "pname": "chromium",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T06:07:07.760664Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:20:46.951093Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "144.0.7559.109",
+      "version": "142.0.7444.59",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/pv3syvk964mxhljzd9i7vs57fjac7417-chromium-144.0.7559.109",
-        "sandbox": "/nix/store/xi6209zxaglwhixid54xk316y0xw0s5n-chromium-144.0.7559.109-sandbox"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "just",
-      "broken": false,
-      "derivation": "/nix/store/bqc56vmmmjan3cak3gs1irlp8yh3j104-just-1.46.0.drv",
-      "description": "Handy way to save and run project-specific commands",
-      "install_id": "just",
-      "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "just-1.46.0",
-      "pname": "just",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T04:36:12.712619Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.46.0",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/db99chhg7z1p8x4kqsnf4hna33yab8jd-just-1.46.0-doc",
-        "man": "/nix/store/faqgfslw33szczc60xvbsddag1vpm6qg-just-1.46.0-man",
-        "out": "/nix/store/kms72z6m9ny9xc8jran5xapikqsbhm5q-just-1.46.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "just",
-      "broken": false,
-      "derivation": "/nix/store/911pgpn6c6q3irahdvbsin84j1fbq5xv-just-1.46.0.drv",
-      "description": "Handy way to save and run project-specific commands",
-      "install_id": "just",
-      "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "just-1.46.0",
-      "pname": "just",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T05:05:54.159512Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.46.0",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/x29kkagia2b2hw20qj0m5r256cvi3fk7-just-1.46.0-doc",
-        "man": "/nix/store/jcrjba1fjd86vdbh8iwj37cbw0ngn26v-just-1.46.0-man",
-        "out": "/nix/store/84hs79g4rgwpd8vpvrsnibmfh2qk08fq-just-1.46.0"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "just",
-      "broken": false,
-      "derivation": "/nix/store/rqdimcknd0av853m34x1245zp40nzmd4-just-1.46.0.drv",
-      "description": "Handy way to save and run project-specific commands",
-      "install_id": "just",
-      "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "just-1.46.0",
-      "pname": "just",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T05:34:14.593161Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.46.0",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/40bl31lv2wy1p7yfafzzh1wip3pc0iga-just-1.46.0-doc",
-        "man": "/nix/store/svaa8vdlzdgbm5plfk3bvyawnvkj7x36-just-1.46.0-man",
-        "out": "/nix/store/dj01bb0rk1czx6wdymfswh4as56xsbkw-just-1.46.0"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "just",
-      "broken": false,
-      "derivation": "/nix/store/sapz2v0kcbxii925swwgd37ar10wclnn-just-1.46.0.drv",
-      "description": "Handy way to save and run project-specific commands",
-      "install_id": "just",
-      "license": "CC0-1.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "just-1.46.0",
-      "pname": "just",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T06:07:29.155451Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.46.0",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/db447q0xh3xdhaz8b8mc6k02sl2ckgdc-just-1.46.0-doc",
-        "man": "/nix/store/7cjc376r94pkwnlcvaqrna8k8q2spvkc-just-1.46.0-man",
-        "out": "/nix/store/n4g7fjn0b4m0rfjaqw2y4czvz6za1iwr-just-1.46.0"
+        "out": "/nix/store/bj09y0p98p3rw6bzplmbawdywi4yb8wk-chromium-142.0.7444.59",
+        "sandbox": "/nix/store/46lfqsgr5z5i5yyy29dz5f844frc506j-chromium-142.0.7444.59-sandbox"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -221,17 +98,17 @@
     {
       "attr_path": "mermaid-cli",
       "broken": false,
-      "derivation": "/nix/store/878sf9d40pxlww4c5gcxlp47fc2qvxww-mermaid-cli-11.12.0.drv",
+      "derivation": "/nix/store/laf6bcvjp4cl2fgacb9kxj583z0wvyix-mermaid-cli-11.12.0.drv",
       "description": "Generation of diagrams from text in a similar manner as markdown",
       "install_id": "mermaid-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "mermaid-cli-11.12.0",
       "pname": "mermaid-cli",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T04:36:18.000453Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:38.130202Z",
       "stabilities": [
         "unstable"
       ],
@@ -241,7 +118,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/hd33w4m0pqmb73s63ng07pr80f9c0xi1-mermaid-cli-11.12.0"
+        "out": "/nix/store/mri1mrl657p3dl8l4wclybwcgbz978ab-mermaid-cli-11.12.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -250,17 +127,17 @@
     {
       "attr_path": "mermaid-cli",
       "broken": false,
-      "derivation": "/nix/store/w88ii1032m59yyx6vgidkg84vb8k1jia-mermaid-cli-11.12.0.drv",
+      "derivation": "/nix/store/b9lbnrpdn4s5ilpzz8dj2bpf54n66bic-mermaid-cli-11.12.0.drv",
       "description": "Generation of diagrams from text in a similar manner as markdown",
       "install_id": "mermaid-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "mermaid-cli-11.12.0",
       "pname": "mermaid-cli",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T05:06:06.196828Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:29:31.268932Z",
       "stabilities": [
         "unstable"
       ],
@@ -270,7 +147,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/cw38fpxxz21npkkagn1ys9capxnihjb4-mermaid-cli-11.12.0"
+        "out": "/nix/store/rn7qwm6ipdb0d7qhif68dvb129yr9nhh-mermaid-cli-11.12.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -279,17 +156,17 @@
     {
       "attr_path": "mermaid-cli",
       "broken": false,
-      "derivation": "/nix/store/wxwmh636cn3qsvrraw4fjp03n5knzaix-mermaid-cli-11.12.0.drv",
+      "derivation": "/nix/store/xayxhxzk44sqyqk04drkcy0nv2warlja-mermaid-cli-11.12.0.drv",
       "description": "Generation of diagrams from text in a similar manner as markdown",
       "install_id": "mermaid-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "mermaid-cli-11.12.0",
       "pname": "mermaid-cli",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T05:34:20.114361Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:55:17.869543Z",
       "stabilities": [
         "unstable"
       ],
@@ -299,7 +176,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/xv20ygjqhw2pnckjwnh5zrgk3nlwbrs8-mermaid-cli-11.12.0"
+        "out": "/nix/store/ca7sdr5l58nap31am88isxx7rn6xadv7-mermaid-cli-11.12.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -308,17 +185,17 @@
     {
       "attr_path": "mermaid-cli",
       "broken": false,
-      "derivation": "/nix/store/r9d4gg141kqh4ivwfhd6dnfdlcjk55n1-mermaid-cli-11.12.0.drv",
+      "derivation": "/nix/store/qrndrk27bl93qghgix108r8ymg33a0xa-mermaid-cli-11.12.0.drv",
       "description": "Generation of diagrams from text in a similar manner as markdown",
       "install_id": "mermaid-cli",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "mermaid-cli-11.12.0",
       "pname": "mermaid-cli",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T06:07:42.641906Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:21:23.838307Z",
       "stabilities": [
         "unstable"
       ],
@@ -328,7 +205,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/y8pbqpig37xkbmqilqnyszgrxmwyypsp-mermaid-cli-11.12.0"
+        "out": "/nix/store/zd6kylch11ahdj6mxqmmrqhds3rr01kw-mermaid-cli-11.12.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -337,28 +214,27 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/2f9f2hcw24ncf86i63v9apf9s0k2fgyz-python3-3.13.11.drv",
+      "derivation": "/nix/store/3myrb1pixxdm651xcsghs4p6syz0rx9i-python3-3.13.8.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "python3-3.13.11",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
       "pname": "python3",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T04:36:36.656937Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:56.837163Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.13.11",
+      "version": "3.13.8",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/qzgxkh5rnlswnj5ywhag0djwvn83kr3r-python3-3.13.11"
+        "out": "/nix/store/s7ik6dazn4nd2jdg9l36qf5q0z18sjyk-python3-3.13.8"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -367,29 +243,28 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/cadmaxzh2h1i0id6zfa5zq0mjpr9qqda-python3-3.13.11.drv",
+      "derivation": "/nix/store/4sjw3f3s8nf705jpcvvsh3ibpicqj8cb-python3-3.13.8.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "python3-3.13.11",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
       "pname": "python3",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T05:06:30.934735Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:29:59.207269Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.13.11",
+      "version": "3.13.8",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "debug": "/nix/store/bzb0vriv1a1kaz9zv6lzv62zkcvvm88r-python3-3.13.11-debug",
-        "out": "/nix/store/ygzfhw5nxrn7qqfqmz2s9p6cikcjqqkh-python3-3.13.11"
+        "debug": "/nix/store/53m4xy9yaar25rc2g85fb3qvjxnwfhq5-python3-3.13.8-debug",
+        "out": "/nix/store/m0b67b3lmjcxa8aplpl75qpb26gr5vsf-python3-3.13.8"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -398,27 +273,27 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/dk525f5vnsqf4c5m90rhm2hazww34xmx-python3-3.13.11.drv",
+      "derivation": "/nix/store/hgr3c3s4dq87qdzbyb0rqw2cz7yxnqgr-python3-3.13.8.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "python3-3.13.11",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
       "pname": "python3",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T05:34:39.930339Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:55:36.404976Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.13.11",
+      "version": "3.13.8",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/5wy2gaa1kaskq3j63zwl1jw6a0ffllx5-python3-3.13.11"
+        "out": "/nix/store/ddvx7n1y63g4i9bg0bim3r4ick1cc8x9-python3-3.13.8"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -427,29 +302,54 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/bmlsz2bfdg16dr10k8rm3hmkq09h06nr-python3-3.13.11.drv",
+      "derivation": "/nix/store/nd0m36nc8xf05cdb9pi4jjyqsk1xzgxv-python3-3.13.8.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "name": "python3-3.13.11",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
       "pname": "python3",
-      "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
-      "rev_count": 939624,
-      "rev_date": "2026-02-03T10:48:24Z",
-      "scrape_date": "2026-02-04T06:08:08.474856Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:21:54.126584Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.13.11",
+      "version": "3.13.8",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "debug": "/nix/store/gvhg8py0jr9v83ysqb86rr2s1yidppca-python3-3.13.11-debug",
-        "out": "/nix/store/slhpx9glq7vl99bwi93bgrhn3syv98s1-python3-3.13.11"
+        "debug": "/nix/store/ckj4gnblikbb37gvydggaicw6f0kmcx3-python3-3.13.8-debug",
+        "out": "/nix/store/cfapjd2rvqrpry4grb0kljnp8bvnvfxz-python3-3.13.8"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "spdx-to-mermaid",
+      "derivation": "/nix/store/b0m12faj8azp6zgg1s6drqppimqx51xl-spdx-to-mermaid-0.1.0.drv",
+      "description": "Convert SPDX files to Mermaid diagrams",
+      "install_id": "spdx-to-mermaid",
+      "locked_url": "git@github.com:flox/spdx-visualizer?rev=0ba6be4d753b9c638037052d4f6d37bea05de228",
+      "name": "spdx-to-mermaid-0.1.0",
+      "pname": "spdx-to-mermaid",
+      "rev": "0ba6be4d753b9c638037052d4f6d37bea05de228",
+      "rev_count": 10,
+      "rev_date": "2026-02-04T14:49:59Z",
+      "scrape_date": "2026-02-04T14:55:24.924643117Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "version": "0.1.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/x9bbjsbzaq7yllrg6n2l8pcfjimjw73q-spdx-to-mermaid-0.1.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
