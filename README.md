@@ -20,6 +20,25 @@ cd spdx-to-mermaid
 
 The project uses [Flox](https://flox.dev) for the development environment and [uv](https://docs.astral.sh/uv/) for Python dependency management. Dependencies are automatically managed when using `uv run`.
 
+## Two Environments
+
+This repository contains two Flox environments:
+
+### 1. Development Environment (root)
+- **Location**: Repository root
+- **Purpose**: Development, building, and publishing the package
+- **Includes**: Python source, build tools, uv, testing tools
+- **Usage**: Clone this repo to develop or publish the package
+
+### 2. Viewer Environment (spdx-viewer/)
+- **Location**: `spdx-viewer/` subdirectory
+- **Purpose**: Standalone visualization environment
+- **Includes**: Published `spdx-to-mermaid` package, mermaid-cli, chromium, HTTP server
+- **Usage**: Can be pushed to FloxHub and shared with teams
+- **Lightweight**: No build tools or source code, just the published package
+
+See [spdx-viewer/README.md](spdx-viewer/README.md) for details on using the viewer environment.
+
 ## Usage
 
 ### Quick Visualization
