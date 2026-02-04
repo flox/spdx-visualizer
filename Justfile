@@ -28,7 +28,7 @@ show spdx_file +EXTRA="":
     spdx_path=$(cd "{{invocation_directory()}}" && realpath "{{spdx_file}}")
 
     # Generate mermaid diagram to temp file (mmdc doesn't handle stdin properly)
-    uv run spdx-to-mermaid "$spdx_path" {{EXTRA}} > "$mmd_file"
+    (cd "$project_dir/package" && uv run spdx-to-mermaid "$spdx_path" {{EXTRA}}) > "$mmd_file"
 
     # Convert to SVG (viewer.html expects diagram.svg in project root)
     mmdc -i "$mmd_file" -o "$svg_file" --configFile "$config_path" -p "$project_dir/puppeteer-config.json"

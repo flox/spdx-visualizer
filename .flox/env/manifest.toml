@@ -86,14 +86,46 @@ http-server.command = "cd $FLOX_ENV_PROJECT && uv run python3 -m http.server 300
 ##  $ flox publish
 ## ------------------------------------------------------------------
 [build]
-# [build.myproject]
-# description = "The coolest project ever"
-# version = "0.0.1"
-# command = """
-#   mkdir -p $out/bin
-#   cargo build --release
-#   cp target/release/myproject $out/bin/myproject
-# """
+
+[build.spdx-to-mermaid]
+description = "Convert SPDX files to Mermaid diagrams"
+version = "0.1.0"
+sandbox = "off"
+runtime-packages = ["python3"]
+command = """
+  set -e
+
+  # Change to package directory
+  cd package
+
+  # Build the Python package using uv
+  uv build --out-dir dist
+
+  # Create output directories
+  mkdir -p $out/bin
+  mkdir -p $out/lib/python3.13/site-packages
+
+  # Install the wheel to the output location
+  WHEEL_FILE=$(ls dist/*.whl)
+  uv pip install --no-deps --target $out/lib/python3.13/site-packages "$WHEEL_FILE"
+
+  # Install runtime dependencies
+  uv pip install --target $out/lib/python3.13/site-packages "spdx-tools>=0.8.3"
+
+  # Create a wrapper script that sets up PYTHONPATH
+  cat > $out/bin/spdx-to-mermaid << 'EOF'
+#!/usr/bin/env bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export PYTHONPATH="$SCRIPT_DIR/../lib/python3.13/site-packages:$PYTHONPATH"
+exec python3 -m src.spdx_to_mermaid "$@"
+EOF
+
+  chmod +x $out/bin/spdx-to-mermaid
+
+  echo "✓ Built spdx-to-mermaid CLI tool"
+  echo "  - Executable: $out/bin/spdx-to-mermaid"
+  echo "  - Runtime dependency: python3"
+"""
 
 
 ## Other Environment Options -----------------------------------------
