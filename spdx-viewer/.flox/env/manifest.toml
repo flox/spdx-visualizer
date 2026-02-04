@@ -19,11 +19,10 @@ mermaid-cli.pkg-path = "mermaid-cli"
 python3.pkg-path = "python3"
 chromium.pkg-path = "chromium"
 chromium.systems = ["x86_64-linux", "aarch64-linux"]
-just.pkg-path = "just"
 
-# SPDX to Mermaid converter CLI tool
-# NOTE: Uncomment once the package is published to FloxHub
-# spdx-to-mermaid.pkg-path = "spdx-to-mermaid"
+# SPDX to Mermaid converter CLI tool from flox catalog
+spdx-to-mermaid.pkg-path = "flox/spdx-to-mermaid"
+spdx-to-mermaid.systems = ["x86_64-linux"]
 
 
 ## Environment Variables ---------------------------------------------
@@ -52,16 +51,99 @@ just.pkg-path = "just"
 ## ... sourced by _your shell_ when you run 'flox activate'.
 ## -------------------------------------------------------------------
 [profile]
-# common = '''
-#   gum style \
-#   --foreground 212 --border-foreground 212 --border double \
-#   --align center --width 50 --margin "1 2" --padding "2 4" \
-#     $INTRO_MESSAGE
-# '''
-## Shell-specific customizations such as setting aliases go here:
-# bash = ...
-# zsh  = ...
-# fish = ...
+common = '''
+  # SPDX Viewer Functions
+
+  # Show SPDX file as interactive SVG diagram in browser
+  spdx-show() {
+    if [ $# -eq 0 ]; then
+      echo "Usage: spdx-show <spdx-file> [options]"
+      echo "Example: spdx-show file.spdx.json --compact --max-packages 10"
+      return 1
+    fi
+
+    local spdx_file="$1"
+    shift
+    local extra_args="$@"
+
+    # Resolve to absolute path
+    spdx_file=$(realpath "$spdx_file")
+
+    # Create temp file for mermaid
+    local temp_base=$(mktemp)
+    local mmd_file="${temp_base}.mmd"
+    mv "$temp_base" "$mmd_file"
+
+    local svg_file="$FLOX_ENV_PROJECT/diagram.svg"
+    local config_path="$FLOX_ENV_PROJECT/mermaid-config.json"
+
+    # Start HTTP server if not running
+    if ! lsof -i:3000 -sTCP:LISTEN -t >/dev/null 2>&1; then
+      echo "Starting HTTP server..."
+      flox services start http-server
+      sleep 1
+    fi
+
+    # Generate mermaid diagram
+    spdx-to-mermaid "$spdx_file" $extra_args > "$mmd_file"
+
+    # Convert to SVG
+    mmdc -i "$mmd_file" -o "$svg_file" --configFile "$config_path" -p "$FLOX_ENV_PROJECT/puppeteer-config.json"
+
+    # Open in browser
+    CHROME_DEVEL_SANDBOX="" chromium --no-sandbox "http://localhost:3000/viewer.html"
+
+    # Cleanup
+    rm -f "$mmd_file"
+  }
+
+  # Convert SPDX to SVG file
+  spdx-svg() {
+    if [ $# -eq 0 ]; then
+      echo "Usage: spdx-svg <spdx-file> [output.svg] [options]"
+      echo "Example: spdx-svg file.spdx.json diagram.svg --compact"
+      return 1
+    fi
+
+    local spdx_file="$1"
+    local output="${2:-diagram.svg}"
+    shift 2 2>/dev/null || shift 1
+    local extra_args="$@"
+
+    # Create temp file
+    local temp_base=$(mktemp)
+    local mmd_file="${temp_base}.mmd"
+    mv "$temp_base" "$mmd_file"
+
+    # Generate and convert
+    spdx-to-mermaid "$spdx_file" $extra_args > "$mmd_file"
+    mmdc -i "$mmd_file" -o "$output" --configFile "$FLOX_ENV_PROJECT/mermaid-config.json"
+    rm -f "$mmd_file"
+
+    echo "Created $output"
+  }
+
+  # Start HTTP server
+  spdx-serve() {
+    flox services start http-server
+    echo "HTTP server started on http://localhost:3000"
+  }
+
+  # Stop all services
+  spdx-stop() {
+    flox services stop
+  }
+
+  echo "SPDX Viewer environment activated!"
+  echo ""
+  echo "Available commands:"
+  echo "  spdx-show <file>         - View SPDX file as interactive diagram"
+  echo "  spdx-svg <file> [out]    - Convert SPDX to SVG file"
+  echo "  spdx-to-mermaid <file>   - Convert SPDX to Mermaid (stdout)"
+  echo "  spdx-serve               - Start HTTP server"
+  echo "  spdx-stop                - Stop services"
+  echo ""
+'''
 
 
 ## Services ---------------------------------------------------------
