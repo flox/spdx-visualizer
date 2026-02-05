@@ -5,3 +5,4 @@ package/dist/
 package/*.egg-info/
 result-*
 dist/
+**/.flox/env.lock
