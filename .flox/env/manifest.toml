@@ -89,7 +89,7 @@ http-server.command = "cd $FLOX_ENV_PROJECT && uv run python3 -m http.server 300
 
 [build.spdx-to-mermaid]
 description = "Convert SPDX files to Mermaid diagrams"
-version = "0.1.0"
+version = "0.1.1"
 sandbox = "off"
 runtime-packages = ["python3"]
 command = """

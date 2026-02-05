@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "spdx-to-mermaid"
-version = "0.1.0"
+version = "0.1.1"
 description = "Convert SPDX files to Mermaid tree diagrams"
 requires-python = ">=3.12"
 dependencies = [
