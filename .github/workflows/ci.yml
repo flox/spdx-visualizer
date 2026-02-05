@@ -1,0 +1,104 @@
+name: "CI"
+
+on:
+  workflow_dispatch:
+  merge_group:
+  push:
+    branches:
+      - "main"
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+env:
+  FLOX_DISABLE_METRICS: "true"
+  CI: true
+
+jobs:
+  check-changes:
+    name: "Check for code changes"
+    runs-on: "ubuntu-latest"
+    outputs:
+      code-changed: ${{ steps.filter.outputs.code }}
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+
+      - name: "Check for code changes"
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            code:
+              - 'package/**'
+              - '.flox/env/manifest.toml'
+
+  build:
+    name: "Build"
+    needs: check-changes
+
+    strategy:
+      matrix:
+        os:
+          - "ubuntu-22.04"
+          - "macos-latest"
+
+    runs-on: "${{ matrix.os }}"
+
+    if: ${{ github.event_name != 'push' && needs.check-changes.outputs.code-changed == 'true' }}
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+        with:
+          fetch-depth: 0
+          ref: "${{ github.head_ref }}"
+
+      - name: "Install flox"
+        uses: "flox/install-flox-action@main"
+
+      - name: "Build"
+        run: "flox build spdx-to-mermaid"
+
+  publish:
+    name: "Publish"
+    needs: check-changes
+
+    strategy:
+      matrix:
+        os:
+          - "ubuntu-22.04"
+          - "macos-latest"
+
+    runs-on: "${{ matrix.os }}"
+
+    if: ${{ github.event_name == 'push' && github.ref_name == 'main' && needs.check-changes.outputs.code-changed == 'true' }}
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+        with:
+          fetch-depth: 0
+          ref: "${{ github.head_ref }}"
+
+      - name: "Install flox"
+        uses: "flox/install-flox-action@main"
+
+      - name: "Get FloxHub token"
+        run: |
+          export FLOX_FLOXHUB_TOKEN=$(
+            curl --request POST \
+              --url https://auth.flox.dev/oauth/token \
+              --header 'content-type: application/x-www-form-urlencoded' \
+              --data "client_id=${{ secrets.MANAGED_FLOXENVS_AUTH0_CLIENT_ID }}" \
+              --data "audience=https://hub.flox.dev/api" \
+              --data "grant_type=client_credentials" \
+              --data "client_secret=${{ secrets.MANAGED_FLOXENVS_AUTH0_CLIENT_SECRET }}" \
+                | jq .access_token -r)
+          flox auth status
+          echo "FLOX_FLOXHUB_TOKEN=$FLOX_FLOXHUB_TOKEN" >> $GITHUB_ENV
+
+      - name: "Build & Publish"
+        run: "flox publish --org flox spdx-to-mermaid"
